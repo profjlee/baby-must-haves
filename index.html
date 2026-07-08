@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The things that actually worked · 정말 도움이 된 것들</title>
+<meta name="description" content="A twin family's honest list of baby and toddler essentials. All Amazon commissions donated to March of Dimes.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='80' font-family='Georgia'>J</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Noto+Serif+KR:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* ---------- Palette: warm paper, dark ink, one accent ---------- */
+  :root {
+    --paper: #f6f2ea;
+    --ink: #262019;
+    --muted: #756a5c;
+    --accent: #96482b;      /* burnt sienna */
+    --hair: #ddd3c2;        /* hairline dividers */
+    --serif: "Fraunces", "Noto Serif KR", Georgia, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR",
+            "Apple SD Gothic Neo", sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  /* Faint paper grain so the background isn't dead flat */
+  body::after {
+    content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 1;
+    opacity: 0.35;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .wrap { max-width: 660px; margin: 0 auto; padding: 0 24px 72px; position: relative; z-index: 2; }
+  a { color: var(--accent); }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  /* ---------- Language switch: plain text, no pills ---------- */
+  .lang-bar { display: flex; justify-content: flex-end; padding-top: 28px; font-size: 14px; }
+  .lang-bar button {
+    background: none; border: 0; cursor: pointer; font: inherit;
+    color: var(--muted); padding: 2px 1px; letter-spacing: 0.02em;
+  }
+  .lang-bar button.active {
+    color: var(--ink); font-weight: 600;
+    text-decoration: underline; text-underline-offset: 5px;
+    text-decoration-color: var(--accent); text-decoration-thickness: 2px;
+  }
+  .lang-bar .sep { color: var(--hair); margin: 0 8px; }
+
+  /* ---------- Masthead: left-aligned, editorial ---------- */
+  header { padding: 56px 0 0; }
+  .kicker {
+    font-size: 12.5px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600;
+  }
+  header h1 {
+    font-family: var(--serif);
+    font-size: clamp(34px, 7.5vw, 50px);
+    font-weight: 500; line-height: 1.12; letter-spacing: -0.015em;
+    margin-top: 14px; text-wrap: balance;
+  }
+  header .subtitle {
+    color: var(--muted); font-size: 16px; margin-top: 20px; max-width: 58ch;
+    text-wrap: pretty;
+  }
+  .charity {
+    margin-top: 28px; padding-left: 18px;
+    border-left: 3px solid var(--accent);
+    font-family: var(--serif); font-style: italic;
+    font-size: 16.5px; line-height: 1.55; max-width: 56ch;
+  }
+
+  /* ---------- Contents: dotted-leader index, print style ---------- */
+  .toc { margin-top: 52px; }
+  .toc h2 {
+    font-size: 12.5px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--muted); font-weight: 600; margin-bottom: 14px;
+  }
+  .toc a {
+    display: flex; align-items: baseline; gap: 10px;
+    text-decoration: none; color: var(--ink);
+    padding: 7px 0; font-size: 15.5px;
+  }
+  .toc a:hover .toc-name { color: var(--accent); }
+  .toc .leader { flex: 1; border-bottom: 1px dotted var(--hair); transform: translateY(-4px); }
+  .toc .count { color: var(--muted); font-size: 13.5px; font-variant-numeric: tabular-nums; }
+
+  /* ---------- Sections ---------- */
+  section { margin-top: 64px; scroll-margin-top: 24px; }
+  .sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+  section h2.sec-title {
+    font-family: var(--serif); font-size: 26px; font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+  .sec-head .top-link {
+    font-size: 12.5px; color: var(--muted); text-decoration: none; white-space: nowrap;
+  }
+  .sec-head .top-link:hover { color: var(--accent); }
+  .sec-rule { border: 0; border-top: 2px solid var(--ink); margin-top: 10px; }
+
+  /* ---------- Items: numbered editorial list, not cards ---------- */
+  .item {
+    display: grid; grid-template-columns: 46px 1fr; gap: 4px 14px;
+    padding: 20px 0 18px; border-bottom: 1px solid var(--hair);
+  }
+  .item .num {
+    font-family: var(--serif); font-style: italic; font-size: 15px;
+    color: var(--accent); font-variant-numeric: tabular-nums; padding-top: 2px;
+  }
+  .item .name { font-weight: 600; font-size: 16.5px; line-height: 1.4; }
+  .fav {
+    font-family: var(--serif); font-style: italic; font-weight: 400;
+    color: var(--accent); font-size: 15px; white-space: nowrap;
+  }
+  .item .note { grid-column: 2; color: var(--muted); font-size: 15px; max-width: 56ch; margin-top: 2px; text-wrap: pretty; }
+  .item .links { grid-column: 2; margin-top: 8px; font-size: 14.5px; }
+  .item .links a {
+    color: var(--accent); font-weight: 500; text-decoration: underline;
+    text-underline-offset: 4px; text-decoration-thickness: 1px;
+    transition: text-decoration-thickness 120ms ease;
+  }
+  .item .links a:hover { text-decoration-thickness: 2px; }
+  .item .links a + a { margin-left: 18px; }
+  .coming { color: #a89b8a; font-style: italic; font-size: 13.5px; }
+
+  /* ---------- Footer ---------- */
+  footer { margin-top: 72px; padding-top: 24px; border-top: 2px solid var(--ink); }
+  footer .sign {
+    font-family: var(--serif); font-style: italic; font-size: 17px; margin-bottom: 16px;
+  }
+  footer .fine { font-size: 13px; color: var(--muted); }
+  footer .fine p + p { margin-top: 6px; }
+
+  @media (max-width: 480px) {
+    .item { grid-template-columns: 38px 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- Language switch (EN / 한국어) -->
+  <div class="lang-bar" role="group" aria-label="Language">
+    <button id="btn-en" onclick="setLang('en')">English</button>
+    <span class="sep">·</span>
+    <button id="btn-ko" onclick="setLang('ko')">한국어</button>
+  </div>
+
+  <!-- Masthead: kicker, title, intro, charity note (text from items.js) -->
+  <header>
+    <p class="kicker" id="site-kicker"></p>
+    <h1 id="site-title"></h1>
+    <p class="subtitle" id="site-subtitle"></p>
+    <p class="charity" id="charity"></p>
+  </header>
+
+  <!-- Contents index (built by JavaScript) -->
+  <nav class="toc" id="toc" aria-label="Contents"></nav>
+
+  <!-- Category sections render here -->
+  <main id="content"></main>
+
+  <footer>
+    <p class="sign" id="signature"></p>
+    <div class="fine">
+      <p id="disclosure"></p>
+      <p id="footer-note"></p>
+    </div>
+  </footer>
+</div>
+
+<!-- The item data lives in items.js — that's the file to edit -->
+<script src="items.js"></script>
+<script>
+  /* ==========================================================
+     PAGE LOGIC — you should not need to edit below this line.
+     ========================================================== */
+
+  // Current language: remembered between visits; ?lang=ko in the
+  // URL also works (nice for sharing a Korean-first link).
+  let lang = new URLSearchParams(location.search).get("lang")
+          || localStorage.getItem("lang")
+          || "en";
+
+  // Pick the right language field from an object.
+  // t(item, "name") -> item.nameEn / item.nameKo
+  // t(cat, "")      -> cat.en / cat.ko (category names)
+  function t(obj, field) {
+    const suffix = lang === "ko" ? "Ko" : "En";
+    if (field === "") return obj[lang] || obj.en || "";
+    return obj[field + suffix] || obj[field + "En"] || "";
+  }
+
+  // Adds your Amazon Associates tag to a link if it isn't there yet.
+  function withTag(url) {
+    if (!SITE_CONFIG.amazonTag) return url;
+    try {
+      const u = new URL(url);
+      if (u.hostname.includes("amazon.") && !u.searchParams.get("tag")) {
+        u.searchParams.set("tag", SITE_CONFIG.amazonTag);
+      }
+      return u.toString();
+    } catch { return url; }
+  }
+
+  // UI labels that aren't in items.js
+  const LABELS = {
+    contents:  { en: "Contents",           ko: "목차" },
+    favorite:  { en: "— our favorite",     ko: "— 우리 집 최애" },
+    buyAmazon: { en: "Shop on Amazon ↗",   ko: "아마존에서 보기 ↗" },
+    buyOther:  { en: "View product ↗",     ko: "제품 보러가기 ↗" },
+    coming:    { en: "link coming soon",   ko: "링크 준비 중" },
+    top:       { en: "back to top ↑",      ko: "맨 위로 ↑" },
+    items:     { en: "items",              ko: "개" },
+    signature: { en: "— J, E & the twins · Waban, Massachusetts",
+                 ko: "— J, E 그리고 쌍둥이 · 매사추세츠 웨이번에서" },
+    footer:    { en: "Updated as the twins grow — check back.",
+                 ko: "쌍둥이가 자라는 만큼 리스트도 자랍니다 — 종종 들러주세요." },
+  };
+
+  function render() {
+    document.documentElement.lang = lang === "ko" ? "ko" : "en";
+    document.getElementById("site-kicker").textContent   = t(SITE_CONFIG, "kicker");
+    document.getElementById("site-title").textContent    = t(SITE_CONFIG, "title");
+    document.getElementById("site-subtitle").textContent = t(SITE_CONFIG, "subtitle");
+    document.getElementById("charity").textContent       = t(SITE_CONFIG, "charity");
+    document.getElementById("signature").textContent     = LABELS.signature[lang];
+    document.getElementById("disclosure").textContent    = t(SITE_CONFIG, "disclosure");
+    document.getElementById("footer-note").textContent   = LABELS.footer[lang];
+    document.title = t(SITE_CONFIG, "title");
+
+    // Language switch highlight
+    document.getElementById("btn-en").className = lang === "en" ? "active" : "";
+    document.getElementById("btn-ko").className = lang === "ko" ? "active" : "";
+
+    // Contents index with dotted leaders
+    const toc = document.getElementById("toc");
+    toc.innerHTML = `<h2>${LABELS.contents[lang]}</h2>`;
+    CATEGORIES.forEach(cat => {
+      const count = ITEMS.filter(i => i.category === cat.id).length;
+      if (!count) return;
+      const a = document.createElement("a");
+      a.href = "#" + cat.id;
+      a.innerHTML = `<span class="toc-name">${t(cat, "")}</span>` +
+                    `<span class="leader"></span><span class="count">${count}</span>`;
+      toc.appendChild(a);
+    });
+
+    // Sections — items numbered continuously, magazine style
+    const main = document.getElementById("content");
+    main.innerHTML = "";
+    let n = 0;
+    CATEGORIES.forEach(cat => {
+      const items = ITEMS.filter(i => i.category === cat.id);
+      if (!items.length) return;
+
+      const section = document.createElement("section");
+      section.id = cat.id;
+      section.innerHTML =
+        `<div class="sec-head"><h2 class="sec-title">${t(cat, "")}</h2>` +
+        `<a class="top-link" href="#top">${LABELS.top[lang]}</a></div>` +
+        `<hr class="sec-rule">`;
+
+      items.forEach(item => {
+        n++;
+        const el = document.createElement("article");
+        el.className = "item";
+
+        let html = `<div class="num">${String(n).padStart(2, "0")}</div>`;
+        html += `<div class="name">${t(item, "name")}` +
+                (item.mustHave ? ` <span class="fav">${LABELS.favorite[lang]}</span>` : "") +
+                `</div>`;
+        const note = t(item, "note");
+        if (note) html += `<p class="note">${note}</p>`;
+
+        let links = "";
+        if (item.amazonUrl) {
+          links += `<a href="${withTag(item.amazonUrl)}" target="_blank" rel="noopener sponsored">${LABELS.buyAmazon[lang]}</a>`;
+        }
+        if (item.otherUrl) {
+          links += `<a href="${item.otherUrl}" target="_blank" rel="noopener">${LABELS.buyOther[lang]}</a>`;
+        }
+        html += `<div class="links">${links || `<span class="coming">${LABELS.coming[lang]}</span>`}</div>`;
+
+        el.innerHTML = html;
+        section.appendChild(el);
+      });
+
+      main.appendChild(section);
+    });
+  }
+
+  function setLang(newLang) {
+    lang = newLang;
+    localStorage.setItem("lang", lang);
+    render();
+  }
+
+  document.body.id = "top";
+  render();
+</script>
+</body>
+</html>
