@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "baby-must-haves",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8642", "--directory", "/Users/test/Library/CloudStorage/Dropbox-Personal/claude-sync/code-projects/baby-must-haves"],
+      "port": 8642
+    }
+  ]
+}

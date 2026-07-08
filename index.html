@@ -119,6 +119,12 @@
     color: var(--accent); font-size: 15px; white-space: nowrap;
   }
   .item .note { grid-column: 2; color: var(--muted); font-size: 15px; max-width: 56ch; margin-top: 2px; text-wrap: pretty; }
+  .item .review {
+    grid-column: 2; margin-top: 10px; padding-left: 14px;
+    border-left: 2px solid var(--hair);
+    font-family: var(--serif); font-style: italic;
+    font-size: 15.5px; line-height: 1.6; max-width: 54ch; text-wrap: pretty;
+  }
   .item .links { grid-column: 2; margin-top: 8px; font-size: 14.5px; }
   .item .links a {
     color: var(--accent); font-weight: 500; text-decoration: underline;
@@ -278,6 +284,8 @@
                 `</div>`;
         const note = t(item, "note");
         if (note) html += `<p class="note">${note}</p>`;
+        const review = t(item, "review");
+        if (review) html += `<p class="review">${review}</p>`;
 
         let links = "";
         if (item.amazonUrl) {

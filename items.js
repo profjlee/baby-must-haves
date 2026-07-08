@@ -11,9 +11,12 @@
         nameKo    : product name in Korean
         noteEn    : your one-line comment in English (why you love it)
         noteKo    : same comment in Korean
+        reviewEn  : (optional) your longer personal review, a few sentences —
+                    shows as an italic quote under the note
+        reviewKo  : (optional) same review in Korean
         amazonUrl : your Amazon AFFILIATE link (from SiteStripe — see README)
         otherUrl  : (optional) link for items not sold on Amazon
-        mustHave  : true = shows a "Top pick" badge
+        mustHave  : true = marks it as "our favorite"
    4. Save the file. Done — the page updates automatically.
 
    To REMOVE an item, delete its whole block (from "{" to "},").
