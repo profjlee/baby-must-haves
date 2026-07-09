@@ -140,7 +140,7 @@
   }
   .verdict.essential { color: var(--accent); font-weight: 600; }
   .verdict.maybe { color: var(--muted); font-weight: 400; }
-  .travel-tag {
+  .travel-tag, .value-tag {
     font-family: var(--sans); font-size: 11.5px; font-weight: 600;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted);
     border: 1px solid var(--hair); border-radius: 3px; padding: 1px 7px 2px;
@@ -248,6 +248,7 @@
     essential: { en: "must!",              ko: "사라사!" },
     maybe:     { en: "maybe?",             ko: "좋을지도?" },
     travel:    { en: "✈ travel",           ko: "✈ 여행용" },
+    valuePick: { en: "💰 value pick",       ko: "💰 가성비템" },
     buyAmazon: { en: "Shop on Amazon ↗",   ko: "아마존에서 보기 ↗" },
     registry:  { en: "Start your own Amazon Baby Registry ↗", ko: "아마존 베이비 레지스트리 만들기 ↗" },
     buyOther:  { en: "View product ↗",     ko: "제품 보러가기 ↗" },
@@ -317,6 +318,7 @@
         html += `<div class="name">${t(item, "name")}` +
                 ` <span class="verdict ${tier}">${LABELS[tier][lang]}</span>` +
                 (item.travel ? ` <span class="travel-tag">${LABELS.travel[lang]}</span>` : "") +
+                (item.valuePick ? ` <span class="value-tag">${LABELS.valuePick[lang]}</span>` : "") +
                 `</div>`;
         const note = t(item, "note");
         if (note) html += `<p class="note">${note}</p>`;
