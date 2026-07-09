@@ -16,7 +16,8 @@
         reviewKo  : (optional) same review in Korean
         amazonUrl : your Amazon AFFILIATE link (from SiteStripe — see README)
         otherUrl  : (optional) link for items not sold on Amazon
-        mustHave  : true = marks it as "our favorite"
+        verdict   : "essential" shows the 사라사! (essentials!) label;
+                    anything else (or leaving it out) shows 좋을지도? (maybe?)
    4. Save the file. Done — the page updates automatically.
 
    To REMOVE an item, delete its whole block (from "{" to "},").
@@ -36,8 +37,8 @@ const SITE_CONFIG = {
   titleEn: "The things that actually worked",
   titleKo: "정말 도움이 된 것들만 모았습니다",
 
-  subtitleEn: "Our twins arrived in spring 2025. Every item below was bought with our own money and tested through months of feeds, naps, and laundry. No sponsorships, no gifted products — just the list we wish someone had handed us.",
-  subtitleKo: "2025년 봄, 쌍둥이가 태어났습니다. 아래 물건들은 전부 저희 돈으로 직접 사서 수개월의 수유와 낮잠, 빨래 속에서 검증한 것들이에요. 협찬도 증정품도 없이, 누군가 우리에게 먼저 건네줬더라면 좋았을 리스트입니다.",
+  subtitleEn: "Our twins arrived in spring 2025. Every item below was bought with our own money and tested through plenty of trial and error. This is the list we wish someone had handed us.",
+  subtitleKo: "2025년 봄, 쌍둥이가 태어났습니다. 아래 물건들은 전부 저희 돈으로 직접 사서 많은 시행착오를 거쳐 검증한 것들이에요. 누군가 우리에게 먼저 건네줬더라면 좋았을 리스트입니다.",
 
   charityEn: "When you buy through these links, Amazon pays us a small commission — your price stays the same. Every cent of it goes to March of Dimes, which supports NICU families and research for healthy moms and babies.",
   charityKo: "이 링크로 구매하시면 아마존이 저희에게 소정의 커미션을 지급합니다. 구매 가격은 그대로예요. 그리고 그 수익금 전액은 신생아 집중치료실(NICU) 가족과 건강한 출산을 위한 연구를 지원하는 March of Dimes에 기부됩니다.",
@@ -69,7 +70,7 @@ const ITEMS = [
     noteEn: "One chair that grows from newborn to adult — they join the table from day one.",
     noteKo: "신생아부터 어른까지 쓰는 의자예요. 태어난 날부터 식탁에 함께 앉을 수 있어요.",
     amazonUrl: "",
-    mustHave: true,
+    verdict: "essential",
   },
   {
     category: "feeding",
@@ -78,7 +79,7 @@ const ITEMS = [
     noteEn: "Washes, sterilizes, and dries bottles in one machine. With twins, this saved us hours every week.",
     noteKo: "젖병 세척·소독·건조까지 한 번에! 쌍둥이 육아에서 매주 몇 시간을 아껴준 기계예요.",
     amazonUrl: "",
-    mustHave: true,
+    verdict: "essential",
   },
   {
     category: "feeding",
@@ -95,7 +96,7 @@ const ITEMS = [
     noteEn: "Mix a day's worth of formula at once, clump-free. A twin-parent essential.",
     noteKo: "하루치 분유를 덩어리 없이 한 번에 만들어 두는 피처. 쌍둥이 부모 필수템이에요.",
     amazonUrl: "",
-    mustHave: true,
+    verdict: "essential",
   },
   {
     category: "feeding",
@@ -138,7 +139,7 @@ const ITEMS = [
     noteEn: "Converts from bassinet to crib to toddler bed — one purchase for years.",
     noteKo: "배시넷부터 유아 침대까지 변신하는 침대. 한 번 사면 몇 년을 써요.",
     amazonUrl: "",
-    mustHave: true,
+    verdict: "essential",
   },
   {
     category: "sleeping",
@@ -147,7 +148,7 @@ const ITEMS = [
     noteEn: "Fully breathable and machine-washable — peace of mind for sleep safety.",
     noteKo: "100% 통기성에 통째로 세탁 가능한 매트리스. 수면 안전에 안심이 돼요.",
     amazonUrl: "",
-    mustHave: true,
+    verdict: "essential",
   },
   {
     category: "sleeping",
@@ -164,7 +165,7 @@ const ITEMS = [
     noteEn: "Merino wool sleep sack for all seasons, 0–2 years. Worth every penny.",
     noteKo: "메리노 울 소재로 사계절 내내 쓰는 슬립백 (0~2세). 값어치를 톡톡히 해요.",
     amazonUrl: "",
-    mustHave: true,
+    verdict: "essential",
   },
   {
     category: "sleeping",
@@ -200,7 +201,7 @@ const ITEMS = [
     noteKo: "써본 것 중 가장 부드럽고 흡수력 좋은 기저귀. 새는 일도, 밤중 교체도 줄었어요.",
     amazonUrl: "",
     otherUrl: "https://www.coterie.com",
-    mustHave: true,
+    verdict: "essential",
   },
   {
     category: "diapering",
@@ -243,7 +244,7 @@ const ITEMS = [
     noteEn: "Safe, straightforward install, and clicks into the stroller frame.",
     noteKo: "안전하고 설치가 쉬우며 유모차 프레임에 바로 장착돼요.",
     amazonUrl: "",
-    mustHave: true,
+    verdict: "essential",
   },
   {
     category: "gear",
@@ -252,7 +253,7 @@ const ITEMS = [
     noteEn: "Electric-assist stroller that makes pushing two babies up hills feel effortless.",
     noteKo: "전동 어시스트 덕분에 쌍둥이를 태우고 언덕을 올라도 힘들지 않아요.",
     amazonUrl: "",
-    mustHave: true,
+    verdict: "essential",
   },
   {
     category: "gear",
@@ -269,7 +270,7 @@ const ITEMS = [
     noteEn: "A beloved Korean brand — light as a t-shirt, and babies melt into it.",
     noteKo: "티셔츠처럼 가벼운 한국 브랜드 아기띠. 아기가 폭 안겨서 스르르 잠들어요.",
     amazonUrl: "",
-    mustHave: true,
+    verdict: "essential",
   },
   {
     category: "gear",
@@ -312,7 +313,7 @@ const ITEMS = [
     noteEn: "Gentle, effective, and babies tolerate it surprisingly well.",
     noteKo: "부드럽고 효과 좋은 콧물흡입기. 아기들이 의외로 잘 참아줘요.",
     amazonUrl: "",
-    mustHave: true,
+    verdict: "essential",
   },
   {
     category: "health",
@@ -390,7 +391,7 @@ const ITEMS = [
     noteEn: "Stage-based play gym designed by child development experts — grows with baby all year.",
     noteKo: "발달 단계별로 구성된 플레이 짐. 돌까지 아기와 함께 자라는 장난감이에요.",
     amazonUrl: "",
-    mustHave: true,
+    verdict: "essential",
   },
   {
     category: "playing",
@@ -412,8 +413,9 @@ const ITEMS = [
     category: "playing",
     nameEn: "Jack Musical Baby Crib Mobile",
     nameKo: "잭 뮤지컬 크립 모빌",
-    noteEn: "Gentle music and slow motion — our babies' favorite view.",
-    noteKo: "잔잔한 음악과 느린 움직임. 우리 아기들이 제일 좋아하는 풍경이에요.",
+    noteEn: "Gentle music and slow motion — our babies' favorite view. Pottery Barn Kids only, not on Amazon.",
+    noteKo: "잔잔한 음악과 느린 움직임. 우리 아기들이 제일 좋아하는 풍경이에요. 아마존에는 없고 포터리반 키즈에서만 판매해요.",
     amazonUrl: "",
+    otherUrl: "https://www.potterybarnkids.com/products/jack-musical-crib-mobile/",
   },
 ];

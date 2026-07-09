@@ -114,10 +114,11 @@
     color: var(--accent); font-variant-numeric: tabular-nums; padding-top: 2px;
   }
   .item .name { font-weight: 600; font-size: 16.5px; line-height: 1.4; }
-  .fav {
-    font-family: var(--serif); font-style: italic; font-weight: 400;
-    color: var(--accent); font-size: 15px; white-space: nowrap;
+  .verdict {
+    font-family: var(--serif); font-style: italic; font-size: 15px; white-space: nowrap;
   }
+  .verdict.essential { color: var(--accent); font-weight: 600; }
+  .verdict.maybe { color: var(--muted); font-weight: 400; }
   .item .note { grid-column: 2; color: var(--muted); font-size: 15px; max-width: 56ch; margin-top: 2px; text-wrap: pretty; }
   .item .review {
     grid-column: 2; margin-top: 10px; padding-left: 14px;
@@ -214,7 +215,8 @@
   // UI labels that aren't in items.js
   const LABELS = {
     contents:  { en: "Contents",           ko: "목차" },
-    favorite:  { en: "— our favorite",     ko: "— 우리 집 최애" },
+    essential: { en: "essentials!",        ko: "사라사!" },
+    maybe:     { en: "maybe?",             ko: "좋을지도?" },
     buyAmazon: { en: "Shop on Amazon ↗",   ko: "아마존에서 보기 ↗" },
     buyOther:  { en: "View product ↗",     ko: "제품 보러가기 ↗" },
     coming:    { en: "link coming soon",   ko: "링크 준비 중" },
@@ -272,8 +274,9 @@
         el.className = "item";
 
         let html = `<div class="num">${String(n).padStart(2, "0")}</div>`;
+        const isEssential = item.verdict === "essential";
         html += `<div class="name">${t(item, "name")}` +
-                (item.mustHave ? ` <span class="fav">${LABELS.favorite[lang]}</span>` : "") +
+                ` <span class="verdict ${isEssential ? "essential" : "maybe"}">${LABELS[isEssential ? "essential" : "maybe"][lang]}</span>` +
                 `</div>`;
         const note = t(item, "note");
         if (note) html += `<p class="note">${note}</p>`;
