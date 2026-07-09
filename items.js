@@ -41,11 +41,11 @@ const SITE_CONFIG = {
   subtitleEn: "Our twins arrived in spring 2025. Every item below was bought with our own money and tested through plenty of trial and error. This is the list we wish someone had handed us.",
   subtitleKo: "2025년 봄, 쌍둥이가 태어났습니다. 아래 물건들은 전부 저희 돈으로 직접 사서 많은 시행착오를 거쳐 검증한 것들이에요. 누군가 우리에게 먼저 건네줬더라면 좋았을 리스트입니다.",
 
-  charityEn: "When you buy through these links, Amazon pays us a small commission — your price stays the same. Every cent of it goes to March of Dimes, which supports NICU families and research for healthy moms and babies.",
-  charityKo: "이 링크로 구매하시면 아마존이 저희에게 소정의 커미션을 지급합니다. 구매 가격은 그대로예요. 그리고 그 수익금 전액은 신생아 집중치료실(NICU) 가족과 건강한 출산을 위한 연구를 지원하는 March of Dimes에 기부됩니다.",
+  charityEn: "When you buy through these links, Amazon pays us a small commission — your price stays the same. 100% of our net proceeds from these links are donated to March of Dimes, which supports NICU families and research for healthy moms and babies.",
+  charityKo: "이 링크로 구매하시면 아마존이 저희에게 소정의 커미션을 지급합니다. 구매 가격은 그대로예요. 이 링크를 통한 순수익 전액은 신생아 집중치료실(NICU) 가족과 건강한 출산을 위한 연구를 지원하는 March of Dimes에 기부됩니다.",
 
-  disclosureEn: "As an Amazon Associate I earn from qualifying purchases. All commissions will be donated to March of Dimes.",
-  disclosureKo: "본 페이지는 아마존 어소시에이트 활동의 일환으로, 적격 구매 시 아마존으로부터 커미션을 받습니다. 모든 커미션은 March of Dimes에 전액 기부됩니다.",
+  disclosureEn: "As an Amazon Associate I earn from qualifying purchases. 100% of our net proceeds from these links are donated to March of Dimes.",
+  disclosureKo: "본 페이지는 아마존 어소시에이트 활동의 일환으로, 적격 구매 시 아마존으로부터 커미션을 받습니다. 이 링크를 통한 순수익 전액은 March of Dimes에 기부됩니다.",
 };
 
 // ---------- CATEGORIES ----------
