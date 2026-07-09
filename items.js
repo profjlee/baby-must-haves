@@ -43,7 +43,7 @@ const SITE_CONFIG = {
   subtitleKo: "2025년 봄, 쌍둥이가 태어났습니다. 아래 물건들은 전부 저희 돈으로 직접 사서 많은 시행착오를 거쳐 검증한 것들이에요. 누군가 우리에게 먼저 건네줬더라면 좋았을 리스트입니다.",
 
   charityEn: "When you buy through these links, Amazon pays us a small commission — your price stays the same. 100% of our net proceeds from these links are donated to March of Dimes, which supports NICU families and research for healthy moms and babies.",
-  charityKo: "이 링크로 구매하시면 아마존이 저희에게 소정의 커미션을 지급합니다. 구매 가격은 그대로예요. 이 링크를 통한 순수익 전액은 신생아 집중치료실(NICU) 가족과 건강한 출산을 위한 연구를 지원하는 March of Dimes에 기부됩니다.",
+  charityKo: "이 링크로 구매하시면 아마존이 저희에게 소정의 커미션을 지급합니다. 이 링크를 통한 순수익 전액은 신생아 집중치료실(NICU) 가족과 건강한 출산을 위한 연구를 지원하는 March of Dimes에 기부됩니다.",
 
   disclosureEn: "As an Amazon Associate I earn from qualifying purchases. 100% of our net proceeds from these links are donated to March of Dimes.",
   disclosureKo: "본 페이지는 아마존 어소시에이트 활동의 일환으로, 적격 구매 시 아마존으로부터 커미션을 받습니다. 이 링크를 통한 순수익 전액은 March of Dimes에 기부됩니다.",
@@ -74,6 +74,7 @@ const ITEMS = [
     noteEn: "A Norwegian classic — one chair that grows from newborn to adult, so they join the table from day one.",
     noteKo: "노르웨이의 국민 하이체어예요. 신생아부터 어른까지 쓸 수 있어 태어난 날부터 식탁에 함께 앉을 수 있어요.",
     amazonUrl: "https://www.amazon.com/dp/B0BWSM3765",
+    image: "https://m.media-amazon.com/images/I/51dBY8Ee4mL._SL1500_.jpg",
     verdict: "essential",
   },
   {
@@ -83,6 +84,7 @@ const ITEMS = [
     noteEn: "From the American brand Baby Brezza — washes, sterilizes, and dries bottles in one machine. With twins, this saved us hours every week.",
     noteKo: "미국 브랜드 베이비 브레자 제품이에요. 젖병 세척·소독·건조까지 한 번에! 쌍둥이 육아에서 매주 몇 시간을 아껴줬어요.",
     amazonUrl: "https://www.amazon.com/dp/B0CKRWC8ZN",
+    image: "https://m.media-amazon.com/images/I/71Oo8N-tU7L._SL1500_.jpg",
     verdict: "essential",
   },
   {
@@ -92,6 +94,7 @@ const ITEMS = [
     noteEn: "Also from Baby Brezza (USA) — a perfectly mixed, warm bottle at the push of a button, day or night.",
     noteKo: "역시 베이비 브레자(미국) 제품이에요. 버튼 하나면 온도와 농도가 딱 맞는 분유 한 병이 바로 나와요. 밤중 수유에 특히 진가를 발휘해요.",
     amazonUrl: "https://www.amazon.com/dp/B07MYW28QR",
+    image: "https://m.media-amazon.com/images/I/71ysfmyOu+L._AC_SL1500_.jpg",
     verdict: "essential",
   },
   {
@@ -101,6 +104,7 @@ const ITEMS = [
     noteEn: "The travel-size Baby Brezza (USA) — warms a bottle anywhere, no outlet needed. Car, stroller, middle of the night.",
     noteKo: "베이비 브레자(미국)의 휴대용 버전이에요. 콘센트 없이 어디서든 분유를 데워줘요. 차 안, 유모차, 새벽 수유에 최고예요.",
     amazonUrl: "https://www.amazon.com/dp/B0DPL81FJM",
+    image: "https://m.media-amazon.com/images/I/61OEHjWW8XL._SL1500_.jpg",
     travel: true,
   },
   {
@@ -110,6 +114,7 @@ const ITEMS = [
     noteEn: "An American nursery staple — mix a day's worth of formula at once, clump-free. A twin-parent essential.",
     noteKo: "미국의 육아용품 스테디셀러예요. 하루치 분유를 덩어리 없이 한 번에 만들어 두는 피처. 쌍둥이 부모 필수템이에요.",
     amazonUrl: "https://www.amazon.com/dp/B01ABOYJNI",
+    image: "https://m.media-amazon.com/images/I/71G1vDmFAoL._AC_SL1500_.jpg",
     verdict: "essential",
   },
   {
@@ -119,6 +124,7 @@ const ITEMS = [
     noteEn: "Italian-made — clamps onto any table, our go-to for restaurants and travel.",
     noteKo: "이탈리아산이에요. 어느 테이블에나 끼워 쓰는 휴대용 아기 의자로 식당·여행에 최고예요.",
     amazonUrl: "https://www.amazon.com/dp/B00IOGIM9S",
+    image: "https://m.media-amazon.com/images/I/71JwQyi6KPL._SL1500_.jpg",
     verdict: "essential",
     travel: true,
   },
@@ -129,6 +135,7 @@ const ITEMS = [
     noteEn: "Swedish design — a deep pocket catches everything, and it rinses clean in seconds.",
     noteKo: "스웨덴 브랜드예요. 깊은 포켓이 흘린 음식을 다 받아주고, 물로 헹구면 바로 깨끗해져요.",
     amazonUrl: "https://www.amazon.com/dp/B07NF5SVMZ",
+    image: "https://m.media-amazon.com/images/I/61gdw3BRDBL._SL1500_.jpg",
   },
   {
     category: "feeding",
@@ -137,6 +144,7 @@ const ITEMS = [
     noteEn: "Another Dr. Brown's (USA) classic — the vented bottle that means less gas, less spit-up.",
     noteKo: "역시 미국 브랜드 닥터브라운의 클래식 제품이에요. 벤트 구조로 가스와 게움을 줄여줘요.",
     amazonUrl: "https://www.amazon.com/dp/B01845QGKK",
+    image: "https://m.media-amazon.com/images/I/714N9O9walL._SL1500_.jpg",
   },
   {
     category: "feeding",
@@ -144,7 +152,8 @@ const ITEMS = [
     nameKo: "헤겐 PCTO 젖병 (240ml, 2개)",
     noteEn: "A Singaporean design — square, stackable bottles with snap-on lids that double as storage containers.",
     noteKo: "싱가포르 브랜드예요. 사각형이라 쌓아 보관하기 좋고, 원터치 뚜껑 덕분에 보관용기로도 쓰는 젖병이에요.",
-    amazonUrl: "https://www.amazon.com/dp/B01ISRRBI0",
+    amazonUrl: "",
+    otherUrl: "https://www.hegen.us/products/hegen-8oz-240ml-ppsu-feeding-bottle-in-2-pack",
   },
   {
     category: "feeding",
@@ -153,15 +162,16 @@ const ITEMS = [
     noteEn: "Dr. Brown's (USA) again — holds a full day of bottles and folds flat when not needed.",
     noteKo: "역시 닥터브라운(미국) 제품이에요. 하루치 젖병이 다 올라가고, 안 쓸 땐 납작하게 접혀요.",
     amazonUrl: "https://www.amazon.com/dp/B00HNVWGNS",
+    image: "https://m.media-amazon.com/images/I/712JL9weJmL._AC_SL1500_.jpg",
   },
   {
     category: "feeding",
-    nameEn: "Dapple Baby Bottle & Dish Soap (Travel 2-Pack)",
-    nameKo: "대플 젖병 세정제 (여행용 2개)",
-    noteEn: "An American plant-based soap made specifically for milk residue; the travel size lives in the diaper bag.",
-    noteKo: "미국 브랜드의 분유 잔여물 전용 식물성 세정제예요. 여행용 사이즈는 기저귀 가방에 상비해요.",
-    amazonUrl: "https://www.amazon.com/dp/B01MRD73PR",
-    travel: true,
+    nameEn: "Dapple Baby Bottle & Dish Soap (Fragrance-Free, 16.9 fl oz)",
+    nameKo: "대플 젖병 세정제 (무향, 16.9 fl oz)",
+    noteEn: "An American plant-based soap made specifically for milk residue.",
+    noteKo: "미국 브랜드의 분유 잔여물 전용 식물성 세정제예요.",
+    amazonUrl: "https://www.amazon.com/dp/B005UNYR38",
+    image: "https://m.media-amazon.com/images/I/61wQ5+YfUrL._AC_SL1500_.jpg",
   },
   {
     category: "feeding",
@@ -170,6 +180,7 @@ const ITEMS = [
     noteEn: "From Munchkin (USA) — reaches every corner and looks fine sitting by the sink.",
     noteKo: "먼치킨(미국) 제품이에요. 구석구석 잘 닦이고 싱크대에 놔둬도 깔끔해 보여요.",
     amazonUrl: "https://www.amazon.com/dp/B0CQKGR569",
+    image: "https://m.media-amazon.com/images/I/61d98gnhKhL._AC_SL1500_.jpg",
   },
   {
     category: "feeding",
@@ -178,6 +189,7 @@ const ITEMS = [
     noteEn: "Firm, supportive nursing pillow with a washable cover.",
     noteKo: "모양이 꺼지지 않아 아기를 잘 받쳐주고, 커버는 세탁 가능해요.",
     amazonUrl: "https://www.amazon.com/dp/B0C9M7BHBN",
+    image: "https://m.media-amazon.com/images/I/61mmtruN1EL._SL1500_.jpg",
   },
   {
     category: "feeding",
@@ -186,6 +198,7 @@ const ITEMS = [
     noteEn: "A Korean brand (MOTHER-K) and travel hack in one — no bottle washing on the road.",
     noteKo: "한국 브랜드 마더케이의 외출 꿀템이에요. 여행 중 젖병 설거지가 사라져요.",
     amazonUrl: "https://www.amazon.com/dp/B0CHF4SS9N",
+    image: "https://m.media-amazon.com/images/I/51UCB+K7hzL._SL1500_.jpg",
     travel: true,
   },
   {
@@ -195,6 +208,7 @@ const ITEMS = [
     noteEn: "Shelf-stable organic purées you mix fresh with water, milk, or formula.",
     noteKo: "물이나 분유에 바로 개어 먹이는 유기농 이유식이에요. 실온 보관도 가능해요.",
     amazonUrl: "https://www.amazon.com/dp/B07K2SHLYG",
+    image: "https://m.media-amazon.com/images/I/81PaonbNXwL._SL1500_.jpg",
   },
   {
     category: "feeding",
@@ -203,6 +217,7 @@ const ITEMS = [
     noteEn: "From NumNum (USA) — dip-and-lick spoons for baby-led weaning, no scooping skills needed.",
     noteKo: "미국 브랜드 넘넘 제품이에요. 아기가 스스로 찍어 빨아먹는 자기주도 이유식 스푼이에요.",
     amazonUrl: "https://www.amazon.com/dp/B0CCW7278L",
+    image: "https://m.media-amazon.com/images/I/51ofKU2Dc4L._AC_SL1080_.jpg",
   },
   {
     category: "feeding",
@@ -211,6 +226,7 @@ const ITEMS = [
     noteEn: "From WeeSprout (USA) — freezer-to-microwave glass jars for batch-cooked baby food.",
     noteKo: "미국 브랜드 위스프라우트 제품이에요. 냉동실에서 전자레인지로 바로 가는 유리 이유식 용기예요.",
     amazonUrl: "https://www.amazon.com/dp/B0F32PMPV9",
+    image: "https://m.media-amazon.com/images/I/71cGgm0J6dL._AC_SL1500_.jpg",
   },
   {
     category: "feeding",
@@ -219,6 +235,7 @@ const ITEMS = [
     noteEn: "Cook three baby-food batches at once in one rice cooker or Instant Pot.",
     noteKo: "밥솥 하나로 이유식 세 가지를 동시에 만들 수 있는 칸막이예요.",
     amazonUrl: "https://www.amazon.com/dp/B0DQ525DNP",
+    image: "https://m.media-amazon.com/images/I/61P2kRYFNiL._AC_SL1500_.jpg",
   },
   {
     category: "feeding",
@@ -227,6 +244,7 @@ const ITEMS = [
     noteEn: "Scrapes soft fruit straight into a spoonable purée.",
     noteKo: "과일을 긁어서 바로 떠먹일 수 있는 이중 스푼이에요.",
     amazonUrl: "https://www.amazon.com/dp/B0BZBVLJM3",
+    image: "https://m.media-amazon.com/images/I/61Vb-I6iCOL._SL1500_.jpg",
   },
   {
     category: "feeding",
@@ -235,6 +253,7 @@ const ITEMS = [
     noteEn: "Weighted straw sips at any angle — great for the sippy-cup transition.",
     noteKo: "어느 각도로 기울여도 빨리는 무게추 빨대컵. 컵 연습에 좋아요.",
     amazonUrl: "https://www.amazon.com/dp/B0CB671LGX",
+    image: "https://m.media-amazon.com/images/I/61hVchOX40L._SL1500_.jpg",
   },
   {
     category: "feeding",
@@ -243,6 +262,7 @@ const ITEMS = [
     noteEn: "From Nuby (USA) — straps to any chair, perfect for grandparents' houses and rentals.",
     noteKo: "미국 브랜드 누비 제품이에요. 어느 의자에나 묶어 쓰는 휴대용 부스터로 조부모님 댁이나 숙소에서 유용해요.",
     amazonUrl: "https://www.amazon.com/dp/B0FWT7LM1Q",
+    image: "https://m.media-amazon.com/images/I/8194HrlaNiL._SL1500_.jpg",
     travel: true,
   },
   {
@@ -252,6 +272,7 @@ const ITEMS = [
     noteEn: "Sprays out baby-food and milk stains, even after they've set.",
     noteKo: "이유식과 분유 얼룩 전용 스프레이. 말라붙은 얼룩도 지워져요.",
     amazonUrl: "https://www.amazon.com/dp/B0BVXQQNBB",
+    image: "https://m.media-amazon.com/images/I/61mv01U0ZDL._AC_SL1500_.jpg",
   },
   {
     category: "feeding",
@@ -260,6 +281,7 @@ const ITEMS = [
     noteEn: "A Japanese brand and the straw-training classic — the air valve means no leaks, even on its side.",
     noteKo: "일본 브랜드 리첼의 국민 빨대 연습 컵이에요. 공기 밸브 덕분에 옆으로 눕혀도 안 새요.",
     amazonUrl: "https://www.amazon.com/dp/B08BCT3LKC",
+    image: "https://m.media-amazon.com/images/I/61s8oCZnRsL._SL1500_.jpg",
   },
 
   // ================= SLEEP · 수면 =================
@@ -270,6 +292,7 @@ const ITEMS = [
     noteEn: "An American brand — converts from bassinet to crib to toddler bed, one purchase for years.",
     noteKo: "미국 브랜드예요. 배시넷부터 유아 침대까지 변신하는 침대. 한 번 사면 몇 년을 써요.",
     amazonUrl: "https://www.amazon.com/dp/B0BTPXVHBF",
+    image: "https://m.media-amazon.com/images/I/71JoIVvVExL._SL1500_.jpg",
     verdict: "essential",
   },
   {
@@ -279,6 +302,7 @@ const ITEMS = [
     noteEn: "From Newton Baby (USA) — fully breathable and machine-washable, peace of mind for sleep safety.",
     noteKo: "미국 브랜드 뉴턴 베이비 제품이에요. 100% 통기성에 통째로 세탁 가능한 매트리스. 수면 안전에 안심이 돼요.",
     amazonUrl: "https://www.amazon.com/dp/B00WR958TA",
+    image: "https://m.media-amazon.com/images/I/71VeejrijDL._AC_SL1500_.jpg",
   },
   {
     category: "sleeping",
@@ -287,6 +311,7 @@ const ITEMS = [
     noteEn: "Breathable sheets from Newton Baby (USA) that fit the mattress perfectly.",
     noteKo: "뉴턴 베이비(미국) 매트리스에 딱 맞는 통기성 좋은 순면 시트예요.",
     amazonUrl: "https://www.amazon.com/dp/B09BBJ6SXN",
+    image: "https://m.media-amazon.com/images/I/11xIhVvAlBL.jpg",
   },
   {
     category: "sleeping",
@@ -295,6 +320,7 @@ const ITEMS = [
     noteEn: "An American brand — merino wool sleep sack for all seasons, 0–2 years. Worth every penny.",
     noteKo: "미국 브랜드예요. 메리노 울 소재로 사계절 내내 쓰는 슬립백 (0~2세). 값어치를 톡톡히 해요.",
     amazonUrl: "https://www.amazon.com/dp/B07FNB81PH",
+    image: "https://m.media-amazon.com/images/I/81xeSHSX75L._SL1500_.jpg",
     verdict: "essential",
   },
   {
@@ -304,6 +330,7 @@ const ITEMS = [
     noteEn: "From Hatch (USA) — sound machine and night light, controlled from your phone; the portable Rest Go travels with us.",
     noteKo: "미국 브랜드 해치 제품이에요. 휴대폰으로 조절하는 백색소음기 겸 수유등. 휴대용 레스트 고는 외출할 때 늘 함께해요.",
     amazonUrl: "https://www.amazon.com/dp/B0DCMJQYZS",
+    image: "https://m.media-amazon.com/images/I/41QwAS8WxPL._AC_SL1080_.jpg",
     verdict: "essential",
     travel: true,
   },
@@ -314,6 +341,7 @@ const ITEMS = [
     noteEn: "An American company — crystal-clear overhead camera with breathing motion tracking.",
     noteKo: "미국 브랜드예요. 머리 위에서 내려다보는 선명한 카메라와 호흡 움직임 모니터링 기능.",
     amazonUrl: "https://www.amazon.com/dp/B0BG3L9P73",
+    image: "https://m.media-amazon.com/images/I/716Q5OzuTiL._SL1500_.jpg",
   },
   {
     category: "sleeping",
@@ -322,6 +350,7 @@ const ITEMS = [
     noteEn: "From Owlet (USA) — tracks oxygen and heart rate while baby sleeps, extra reassurance for NICU-graduate parents.",
     noteKo: "미국 브랜드 아울렛 제품이에요. 아기가 자는 동안 산소포화도와 심박수를 확인해줘요. 니큐 졸업생 부모에게 큰 안심이 됩니다.",
     amazonUrl: "https://www.amazon.com/dp/B09YVSYGDW",
+    image: "https://m.media-amazon.com/images/I/61p5jOP5fKL._SL1500_.jpg",
   },
   {
     category: "sleeping",
@@ -330,16 +359,18 @@ const ITEMS = [
     noteEn: "Budget-friendly second set of eyes on two cribs — pan, tilt, and phone alerts.",
     noteKo: "침대 두 개를 지켜보는 가성비 카메라. 휴대폰으로 방향 조절과 알림이 돼요.",
     amazonUrl: "https://www.amazon.com/dp/B09Y8C185M",
+    image: "https://m.media-amazon.com/images/I/51c2KSMYLRL._AC_SL1500_.jpg",
   },
 
   // ================= DIAPERING · 기저귀 =================
   {
     category: "diapering",
-    nameEn: "Coterie Ultra Soft Diapers (Monthly Supply)",
-    nameKo: "코테리 울트라 소프트 기저귀 (월간 구독)",
+    nameEn: "Coterie Ultra Soft Diapers",
+    nameKo: "코테리 울트라 소프트 기저귀",
     noteEn: "An American brand — the softest, most absorbent diapers we tried, fewer blowouts, fewer night changes.",
     noteKo: "미국 브랜드예요. 써본 것 중 가장 부드럽고 흡수력 좋은 기저귀. 새는 일도, 밤중 교체도 줄었어요.",
     amazonUrl: "https://www.amazon.com/dp/B0C2DCB188",
+    image: "https://m.media-amazon.com/images/I/7126RO8oaaL._AC_SL1500_.jpg",
     otherUrl: "https://www.coterie.com",
   },
   {
@@ -349,6 +380,7 @@ const ITEMS = [
     noteEn: "Apply cream without getting it on your hands. Genius tube design.",
     noteKo: "손에 안 묻히고 바르는 발진 크림. 튜브 디자인이 천재적이에요.",
     amazonUrl: "https://www.amazon.com/dp/B0F3JPGJL3",
+    image: "https://m.media-amazon.com/images/I/714pB+-gRvL._SL1500_.jpg",
   },
   {
     category: "diapering",
@@ -357,6 +389,7 @@ const ITEMS = [
     noteEn: "From Momcozy (China) — warm wipes mean far fewer midnight tears, theirs and ours.",
     noteKo: "중국 브랜드 맘코지 제품이에요. 따뜻한 물티슈 덕분에 새벽 기저귀 갈이 울음이 확 줄었어요.",
     amazonUrl: "https://www.amazon.com/dp/B0CNP84VXZ",
+    image: "https://m.media-amazon.com/images/I/5108p8PPNuL._SL1500_.jpg",
   },
   {
     category: "diapering",
@@ -365,6 +398,7 @@ const ITEMS = [
     noteEn: "From Skip Hop (USA) — wipes clean instantly, no covers to wash.",
     noteKo: "미국 브랜드 스킵합 제품이에요. 커버 세탁이 필요 없이 물티슈로 쓱 닦으면 끝나는 교환 패드예요.",
     amazonUrl: "https://www.amazon.com/dp/B075X8TPMN",
+    image: "https://m.media-amazon.com/images/I/51p15TmQfrL._SL1500_.jpg",
   },
 
   // ================= GEAR & ON-THE-GO · 외출/이동 =================
@@ -375,6 +409,7 @@ const ITEMS = [
     noteEn: "An American brand — safe, straightforward install, and clicks into the stroller frame.",
     noteKo: "미국 브랜드예요. 안전하고 설치가 쉬우며 유모차 프레임에 바로 장착돼요.",
     amazonUrl: "https://www.amazon.com/dp/B08K2X1DPC",
+    image: "https://m.media-amazon.com/images/I/81InHEsi58L._SL1500_.jpg",
   },
   {
     category: "gear",
@@ -383,6 +418,7 @@ const ITEMS = [
     noteEn: "A German brand — the electric-assist stroller makes pushing two babies up hills feel effortless.",
     noteKo: "독일 브랜드 사이벡스 제품이에요. 전동 어시스트 덕분에 쌍둥이를 태우고 언덕을 올라도 힘들지 않아요.",
     amazonUrl: "https://www.amazon.com/dp/B0F48WKTRJ",
+    image: "https://m.media-amazon.com/images/I/51HjfNck79L._SL1500_.jpg",
   },
   {
     category: "gear",
@@ -393,6 +429,7 @@ const ITEMS = [
     reviewEn: "Honestly, we ended up using this very rarely.",
     reviewKo: "솔직히 말하면 저희는 거의 쓸 일이 없었어요.",
     amazonUrl: "https://www.amazon.com/dp/B008U4MKU6",
+    image: "https://m.media-amazon.com/images/I/818lrmcX7HL._SL1500_.jpg",
   },
   {
     category: "gear",
@@ -401,6 +438,7 @@ const ITEMS = [
     noteEn: "A beloved Korean brand — light as a t-shirt, and babies melt into it. Packs down small enough for any trip.",
     noteKo: "한국 브랜드예요. 티셔츠처럼 가벼운 아기띠로, 아기가 폭 안겨서 스르르 잠들어요. 작게 접혀서 어떤 여행에도 챙기기 좋아요.",
     amazonUrl: "https://www.amazon.com/dp/B0B73KP572",
+    image: "https://m.media-amazon.com/images/I/71tXtNff9QL._SL1500_.jpg",
     travel: true,
   },
   {
@@ -422,6 +460,7 @@ const ITEMS = [
     reviewEn: "Twin tip: with a stroller connector, one parent can push both alone.",
     reviewKo: "쌍둥이 팁: 유모차 커넥터로 두 대를 연결하면 혼자서도 둘 다 밀 수 있어요.",
     amazonUrl: "https://www.amazon.com/dp/B0B729KDCM",
+    image: "https://m.media-amazon.com/images/I/51UhIdy6C4L._SL1000_.jpg",
     verdict: "essential",
     travel: true,
   },
@@ -432,6 +471,7 @@ const ITEMS = [
     noteEn: "An American brand — five motions that mimic parents' arms, buys you a shower with twins.",
     noteKo: "미국 브랜드예요. 엄마 품처럼 움직이는 5가지 모션. 쌍둥이 육아 중 샤워할 시간을 벌어줘요.",
     amazonUrl: "https://www.amazon.com/dp/B0B3F93NYT",
+    image: "https://m.media-amazon.com/images/I/41rBMT5sHGL._SL1232_.jpg",
   },
   {
     category: "gear",
@@ -440,6 +480,7 @@ const ITEMS = [
     noteEn: "Swedish design again — no batteries, baby's own movement makes it bounce. Folds flat for travel.",
     noteKo: "역시 스웨덴 브랜드예요. 배터리 없이 아기 움직임으로 통통 흔들리는 바운서. 납작하게 접혀 휴대도 편해요.",
     amazonUrl: "https://www.amazon.com/dp/B016DAWD2S",
+    image: "https://m.media-amazon.com/images/I/61XS-3NqoBL._SL1500_.jpg",
     verdict: "essential",
     travel: true,
   },
@@ -450,6 +491,7 @@ const ITEMS = [
     noteEn: "An American brand — saves your arms and back once babies want up-down-up-down all day.",
     noteKo: "미국 브랜드예요. 하루 종일 안았다 내렸다 하는 시기에 팔과 허리를 구해주는 힙시트예요.",
     amazonUrl: "https://www.amazon.com/dp/B07R4C4VFX",
+    image: "https://m.media-amazon.com/images/I/81ufYbV27NL._SL1500_.jpg",
     travel: true,
   },
   {
@@ -459,6 +501,7 @@ const ITEMS = [
     noteEn: "Also from Baby Trend (USA) — wagon meets stroller, fits two toddlers plus all the park gear.",
     noteKo: "역시 베이비트렌드(미국) 제품이에요. 유모차 겸 왜건. 아이 둘에 나들이 짐까지 다 들어가요.",
     amazonUrl: "https://www.amazon.com/dp/B0G1ZF9Z63",
+    image: "https://m.media-amazon.com/images/I/715k1UOSa3L._SL1500_.jpg",
   },
   {
     category: "gear",
@@ -467,6 +510,7 @@ const ITEMS = [
     noteEn: "An American brand — a car seat kids wear (2yr+), packs into a backpack for taxis and travel.",
     noteKo: "미국 브랜드예요. 아이가 입는 카시트예요 (2세+). 백팩에 들어가서 택시나 여행에 최고예요.",
     amazonUrl: "https://www.amazon.com/dp/B0CYNNYLB2",
+    image: "https://m.media-amazon.com/images/I/81N5plNyGUL._SL1500_.jpg",
     travel: true,
   },
   {
@@ -476,6 +520,7 @@ const ITEMS = [
     noteEn: "Also from Munchkin (USA) — magnetic and stretch-to-fit, no suction cups falling off mid-drive.",
     noteKo: "역시 먼치킨(미국) 제품이에요. 자석식이라 운전 중에 흡착판처럼 뚝 떨어질 일이 없어요.",
     amazonUrl: "https://www.amazon.com/dp/B07ZPMHYVB",
+    image: "https://m.media-amazon.com/images/I/81TQAR8xpbL._AC_SL1500_.jpg",
   },
   {
     category: "gear",
@@ -484,6 +529,7 @@ const ITEMS = [
     noteEn: "An American brand — light travel crib with breathable mesh, folds fast into its carry bag.",
     noteKo: "미국 브랜드예요. 통기성 메쉬 소재의 가벼운 여행용 아기침대. 캐리백에 금방 접어 넣어요.",
     amazonUrl: "https://www.amazon.com/dp/B0D9Y7GM8V",
+    image: "https://m.media-amazon.com/images/I/81sxYYZgJTL._SL1500_.jpg",
     travel: true,
   },
   {
@@ -493,6 +539,7 @@ const ITEMS = [
     noteEn: "A New York-based brand — a sleeping bag that zips into the stroller, for real winter walks.",
     noteKo: "뉴욕 기반 브랜드예요. 유모차에 채우는 침낭이에요. 한겨울 산책도 문제없어요.",
     amazonUrl: "https://www.amazon.com/dp/B006BEPLM6",
+    image: "https://m.media-amazon.com/images/I/81J82diVw2L._SL1500_.jpg",
     otherUrl: "https://www.bloomingdales.com/shop/product/7am-enfant-blanket-212-evolution-footmuff?ID=4310062",
   },
   {
@@ -502,6 +549,7 @@ const ITEMS = [
     noteEn: "Also 7AM Enfant (New York) — warm muffs that strap to the stroller bar, winter walks without losing your gloves.",
     noteKo: "역시 뉴욕 브랜드 세븐에이엠 앙팡이에요. 유모차 손잡이에 다는 손토시로, 장갑 없이도 겨울 산책이 가능해요.",
     amazonUrl: "https://www.amazon.com/dp/B008VUMKF4",
+    image: "https://m.media-amazon.com/images/I/61cy-zXkyzL._SL1448_.jpg",
     otherUrl: "https://www.bloomingdales.com/shop/product/7am-enfant-classic-warmmuffs?ID=3667796",
   },
   {
@@ -511,6 +559,7 @@ const ITEMS = [
     noteEn: "An American brand — folds into a backpack and sets up in seconds, travel crib and playpen in one.",
     noteKo: "미국 브랜드예요. 백팩으로 접혀서 몇 초면 펼쳐져요. 여행용 침대 겸 플레이펜이에요.",
     amazonUrl: "https://www.amazon.com/dp/B00AKKDSNG",
+    image: "https://m.media-amazon.com/images/I/91H2PBkZELL._SL1500_.jpg",
     travel: true,
   },
 
@@ -522,6 +571,7 @@ const ITEMS = [
     noteEn: "An American brand — medicine goes through a pacifier, no spitting, no tears.",
     noteKo: "미국 브랜드예요. 쪽쪽이로 약을 먹여요. 뱉지도 않고 울지도 않아요.",
     amazonUrl: "https://www.amazon.com/dp/B0CCSX6KPL",
+    image: "https://m.media-amazon.com/images/I/515RG+fK+UL._SL1001_.jpg",
     verdict: "essential",
   },
   {
@@ -531,6 +581,7 @@ const ITEMS = [
     noteEn: "Also Frida Baby (USA) — simple manual suction, oddly effective and easy to clean.",
     noteKo: "역시 프리다 베이비(미국) 제품이에요. 단순한 수동 흡입 방식인데 의외로 효과가 좋고 세척도 간편해요.",
     amazonUrl: "https://www.amazon.com/dp/B00171WXII",
+    image: "https://m.media-amazon.com/images/I/71x9h8NxWnL._SL1500_.jpg",
   },
   {
     category: "health",
@@ -539,6 +590,7 @@ const ITEMS = [
     noteEn: "An American brand — saline spray, gas drops, gripe water, fever reducer, the whole starter medicine cabinet.",
     noteKo: "미국 브랜드예요. 식염수 스프레이, 가스 완화제, 그라이프 워터, 해열제까지 신생아 상비약이 한 세트에.",
     amazonUrl: "https://www.amazon.com/dp/B075G6XMSF",
+    image: "https://m.media-amazon.com/images/I/71unkU1g-CL._AC_SL1500_.jpg",
   },
   {
     category: "health",
@@ -547,6 +599,7 @@ const ITEMS = [
     noteEn: "An American brand — daily drops that helped with gas and colic in the early months.",
     noteKo: "미국 브랜드예요. 초기 몇 달 배앓이와 가스 완화에 도움이 된 데일리 유산균이에요.",
     amazonUrl: "https://www.amazon.com/dp/B00TGHNNES",
+    image: "https://m.media-amazon.com/images/I/71Wg7bu9hbL._AC_SL1500_.jpg",
   },
   {
     category: "health",
@@ -555,6 +608,7 @@ const ITEMS = [
     noteEn: "Also Momcozy (China) — files tiny nails safely while they sleep, no more clipper anxiety.",
     noteKo: "역시 중국 브랜드 맘코지 제품이에요. 아기가 자는 동안 안전하게 손톱을 갈아줘요. 손톱깎이 공포 끝!",
     amazonUrl: "https://www.amazon.com/dp/B0CL4G33BX",
+    image: "https://m.media-amazon.com/images/I/61OOPeG2c-L._SL1500_.jpg",
   },
   {
     category: "health",
@@ -563,6 +617,7 @@ const ITEMS = [
     noteEn: "A Norwegian brand — soft bristles and a chunky handle, made for first teeth.",
     noteKo: "노르웨이 브랜드예요. 부드러운 칫솔모와 잡기 쉬운 손잡이. 첫 이 닦기용으로 딱이에요.",
     amazonUrl: "https://www.amazon.com/dp/B01CKKOIZU",
+    image: "https://m.media-amazon.com/images/I/71scbPZyIKL._AC_SL1500_.jpg",
   },
   {
     category: "health",
@@ -571,6 +626,7 @@ const ITEMS = [
     noteEn: "A Japanese brand — the splatter-proof case catches clippings before they fly.",
     noteKo: "일본 브랜드예요. 깎인 손톱이 튀지 않게 케이스가 받아주는 손톱깎이예요.",
     amazonUrl: "https://www.amazon.com/dp/B09Q5YF2BS",
+    image: "https://m.media-amazon.com/images/I/61+0D-Gk-TL._AC_SL1500_.jpg",
   },
   {
     category: "health",
@@ -579,6 +635,7 @@ const ITEMS = [
     noteEn: "A UK brand — six filing heads for the whole family, with an LED light for night trims.",
     noteKo: "영국 브랜드예요. 온 가족용 파일 헤드가 6개, 야간 손질용 LED 라이트까지 있어요.",
     amazonUrl: "https://www.amazon.com/dp/B09NDTRCYD",
+    image: "https://m.media-amazon.com/images/I/71oDfUFNqUL._SL1500_.jpg",
   },
   {
     category: "health",
@@ -587,6 +644,7 @@ const ITEMS = [
     noteEn: "For fevers when medicine won't stay down — check with your pediatrician.",
     noteKo: "약을 자꾸 뱉거나 토할 때 쓰는 해열 좌약이에요. 소아과와 상의 후 사용하세요.",
     amazonUrl: "https://www.amazon.com/dp/B00Q9BH6O2",
+    image: "https://m.media-amazon.com/images/I/61GHy-1EjzL._AC_SL1500_.jpg",
   },
   {
     category: "health",
@@ -595,6 +653,7 @@ const ITEMS = [
     noteEn: "The standby fever reducer, with a proper dosing syringe included.",
     noteKo: "상비약의 기본인 해열제예요. 계량 주사기가 함께 들어있어요.",
     amazonUrl: "https://www.amazon.com/dp/B073Q34KKQ",
+    image: "https://m.media-amazon.com/images/I/81tl9e7QtsL._AC_SL1500_.jpg",
   },
   {
     category: "health",
@@ -603,6 +662,7 @@ const ITEMS = [
     noteEn: "An American brand — alcohol-free elderberry and echinacea drops for daycare-cold season.",
     noteKo: "미국 브랜드예요. 어린이집 감기 시즌용 무알코올 엘더베리·에키네시아 시럽이에요.",
     amazonUrl: "https://www.amazon.com/dp/B0199RDWOK",
+    image: "https://m.media-amazon.com/images/I/71InSZSqZgL._AC_SL1500_.jpg",
   },
   {
     category: "health",
@@ -611,6 +671,7 @@ const ITEMS = [
     noteEn: "An American brand — orange-mango liquid vitamins that mix easily into milk or water.",
     noteKo: "미국 브랜드예요. 우유나 물에 쉽게 섞이는 오렌지 망고맛 액상 비타민이에요.",
     amazonUrl: "https://www.amazon.com/dp/B001E123JA",
+    image: "https://m.media-amazon.com/images/I/71MNpeV38qL._AC_SL1500_.jpg",
   },
   {
     category: "health",
@@ -619,6 +680,7 @@ const ITEMS = [
     noteEn: "A Swedish brand — probiotic and vitamin D in one dropper, one less thing to remember.",
     noteKo: "스웨덴 브랜드예요. 유산균과 비타민D를 한 방울로 같이 챙겨요. 챙길 게 하나 줄어요.",
     amazonUrl: "https://www.amazon.com/dp/B09H3PTZSK",
+    image: "https://m.media-amazon.com/images/I/71eJGbV-7RL._AC_SL1500_.jpg",
   },
   {
     category: "health",
@@ -627,6 +689,7 @@ const ITEMS = [
     noteEn: "A Canadian brand — fragrance-free detergent strips for sensitive skin, no jug, no measuring.",
     noteKo: "캐나다 브랜드예요. 민감한 피부용 무향 세제 시트예요. 무거운 세제통도, 계량도 필요 없어요.",
     amazonUrl: "https://www.amazon.com/dp/B08DLDJG2K",
+    image: "https://m.media-amazon.com/images/I/71ue9PajvOL._AC_SL1500_.jpg",
   },
 
   // ================= SAFETY · 안전 =================
@@ -637,6 +700,7 @@ const ITEMS = [
     noteEn: "Retractable mesh gate that spans extra-wide openings; rolls away when open.",
     noteKo: "아주 넓은 공간도 막아주는 메쉬 안전문이에요. 안 쓸 땐 돌돌 말려 들어가요.",
     amazonUrl: "https://www.amazon.com/dp/B0DWWMQ2Y3",
+    image: "https://m.media-amazon.com/images/I/811VGRmklKL._AC_SL1500_.jpg",
   },
   {
     category: "safety",
@@ -645,6 +709,7 @@ const ITEMS = [
     noteEn: "Compact spray extinguishers for the kitchen and nursery floor.",
     noteKo: "주방과 아기방 층에 하나씩 두는 컴팩트 소화 스프레이예요.",
     amazonUrl: "https://www.amazon.com/dp/B0DH5CM2CC",
+    image: "https://m.media-amazon.com/images/I/71rRnzqT3+L._SL1500_.jpg",
   },
   {
     category: "safety",
@@ -653,6 +718,7 @@ const ITEMS = [
     noteEn: "Fiberglass fire blankets for the kitchen wall — cheap peace of mind.",
     noteKo: "주방 벽에 걸어두는 화재 담요예요. 저렴한 가격으로 마음이 놓여요.",
     amazonUrl: "https://www.amazon.com/dp/B0BVZ8NB1J",
+    image: "https://m.media-amazon.com/images/I/81Tz6tDrINL._AC_SL1500_.jpg",
   },
   {
     category: "safety",
@@ -661,6 +727,7 @@ const ITEMS = [
     noteEn: "Coast Guard-approved vest for pool and lake days.",
     noteKo: "수영장이나 호수 나들이용 인증 구명조끼예요.",
     amazonUrl: "https://www.amazon.com/dp/B0DQ57XS9R",
+    image: "https://m.media-amazon.com/images/I/71gnfHmBduL._AC_SL1500_.jpg",
   },
 
   // ================= BATH · 목욕 =================
@@ -671,6 +738,7 @@ const ITEMS = [
     noteEn: "A Canadian brand — keeps a slippery newborn secure so you have both hands free.",
     noteKo: "캐나다 브랜드예요. 미끄러운 신생아를 안전하게 받쳐줘서 두 손이 자유로워요.",
     amazonUrl: "https://www.amazon.com/dp/B0DTWXK9J9",
+    image: "https://m.media-amazon.com/images/I/61U3DpK2haL._SL1500_.jpg",
     verdict: "essential",
   },
   {
@@ -680,6 +748,7 @@ const ITEMS = [
     noteEn: "Gentle French skincare — cleanser, lotion, and diaper cream in one set.",
     noteKo: "순한 프랑스 스킨케어 세트. 클렌저, 로션, 발진 크림이 한 번에 들어있어요.",
     amazonUrl: "https://www.amazon.com/dp/B01NA7ZMIA",
+    image: "https://m.media-amazon.com/images/I/71Vfx36c+hL._SL1500_.jpg",
     verdict: "essential",
   },
   {
@@ -689,6 +758,7 @@ const ITEMS = [
     noteEn: "A Korean brand — the nursery staple gauze cloths for faces, burps, and everything else.",
     noteKo: "한국 브랜드예요. 육아 필수템 거즈 손수건. 세수, 트림, 뭐든지 다 쓰여요.",
     amazonUrl: "https://www.amazon.com/dp/B0BLQ4X9T9",
+    image: "https://m.media-amazon.com/images/I/41fw+OOM4jL._SL1000_.jpg",
   },
   {
     category: "bathing",
@@ -697,6 +767,7 @@ const ITEMS = [
     noteEn: "An American brand — plant-based cream for dry patches and sensitive skin.",
     noteKo: "미국 브랜드예요. 건조한 부위와 민감성 피부에 바르는 식물성 크림이에요.",
     amazonUrl: "https://www.amazon.com/dp/B00R60FY3U",
+    image: "https://m.media-amazon.com/images/I/71iwHc6Yx4L._SL1500_.jpg",
   },
 
   // ================= PLAY · 놀이 =================
@@ -707,6 +778,7 @@ const ITEMS = [
     noteEn: "An American brand — stage-based play gym designed by child development experts, grows with baby all year.",
     noteKo: "미국 브랜드예요. 발달 단계별로 구성된 플레이 짐. 돌까지 아기와 함께 자라는 장난감이에요.",
     amazonUrl: "https://www.amazon.com/dp/B075R8BXXC",
+    image: "https://m.media-amazon.com/images/I/81oh+4OZH1L._SL1500_.jpg",
     verdict: "essential",
   },
   {
@@ -716,6 +788,7 @@ const ITEMS = [
     noteEn: "A South African brand — helps early sitters join the action; tray attaches for snacks and toys.",
     noteKo: "남아공 브랜드예요. 아기가 앉아서 함께 놀 수 있게 도와줘요. 간식·장난감용 트레이도 부착돼요.",
     amazonUrl: "https://www.amazon.com/dp/B0F19HC32G",
+    image: "https://m.media-amazon.com/images/I/61ejYkJ9blL._SL1500_.jpg",
   },
   {
     category: "playing",
@@ -742,6 +815,7 @@ const ITEMS = [
     noteEn: "An American brand — the first toy tiny hands can actually hold.",
     noteKo: "미국 브랜드예요. 작은 손으로도 진짜 잡을 수 있는 첫 장난감이에요.",
     amazonUrl: "https://www.amazon.com/dp/B00ZRD99C0",
+    image: "https://m.media-amazon.com/images/I/71BFqKPjRBL._SL1500_.jpg",
   },
   {
     category: "playing",
@@ -750,6 +824,7 @@ const ITEMS = [
     noteEn: "Also Bright Starts (USA) — clip toys to everything: stroller, car seat, play gym.",
     noteKo: "역시 브라이트스타츠(미국) 제품이에요. 유모차, 카시트, 아기체육관 어디든 장난감을 걸 수 있는 링이에요.",
     amazonUrl: "https://www.amazon.com/dp/B001ABZGU2",
+    image: "https://m.media-amazon.com/images/I/61IljL-cdnL._SL1289_.jpg",
   },
   {
     category: "playing",
@@ -758,6 +833,7 @@ const ITEMS = [
     noteEn: "A German brand — screen-free audio player that toddlers control themselves.",
     noteKo: "독일 브랜드예요. 아이가 스스로 조작하는 스크린 없는 오디오 플레이어예요.",
     amazonUrl: "https://www.amazon.com/dp/B0FJ3R4FBX",
+    image: "https://m.media-amazon.com/images/I/61ohsQRpgVL._AC_SL1500_.jpg",
   },
   {
     category: "playing",
@@ -766,6 +842,7 @@ const ITEMS = [
     noteEn: "Also from Tonies (Germany) — record up to 90 minutes of your own stories and songs, grandparents' voices too.",
     noteKo: "역시 독일 브랜드 토니예요. 우리 가족 목소리로 이야기와 노래를 90분까지 녹음할 수 있어요. 조부모님 목소리도요.",
     amazonUrl: "https://www.amazon.com/dp/B0B6G27X9F",
+    image: "https://m.media-amazon.com/images/I/714YS9nd7GL._AC_SL1500_.jpg",
   },
   {
     category: "playing",
@@ -774,6 +851,7 @@ const ITEMS = [
     noteEn: "Vegetable-based paint, safe for babies who taste their art.",
     noteKo: "채소로 만든 물감이라 그림을 맛보는 아기도 안심이에요.",
     amazonUrl: "https://www.amazon.com/dp/B07TKFGP1M",
+    image: "https://m.media-amazon.com/images/I/81BHva89QrL._AC_SL1500_.jpg",
   },
   {
     category: "playing",
@@ -782,6 +860,7 @@ const ITEMS = [
     noteEn: "A classic winter pull sled with a toddler seat.",
     noteKo: "아기 좌석이 달린 클래식 눈썰매예요.",
     amazonUrl: "https://www.amazon.com/dp/B000LF8XSU",
+    image: "https://m.media-amazon.com/images/I/61NmqGwRPCL._AC_SL1500_.jpg",
   },
   {
     category: "playing",
@@ -790,6 +869,7 @@ const ITEMS = [
     noteEn: "Blow-up support seat for early sitters — light enough to bring anywhere.",
     noteKo: "바람을 넣어 쓰는 아기 소파예요. 앉기 연습 시기에 좋고 어디든 가볍게 가져가요.",
     amazonUrl: "https://www.amazon.com/dp/B0CKVX4RSV",
+    image: "https://m.media-amazon.com/images/I/61l31LtKDmL._SL1254_.jpg",
     travel: true,
   },
   {
@@ -810,6 +890,7 @@ const ITEMS = [
     noteEn: "Lined clips that actually stay put in fine baby hair.",
     noteKo: "얇은 아기 머리카락에도 잘 붙어있는 안감 처리 헤어핀이에요.",
     amazonUrl: "https://www.amazon.com/dp/B0CYKNZKNZ",
+    image: "https://m.media-amazon.com/images/I/811FRLbaliL._SL1500_.jpg",
   },
   {
     category: "extras",
@@ -818,6 +899,7 @@ const ITEMS = [
     noteEn: "Fridge whiteboard for tracking feeds, naps, and who-did-what.",
     noteKo: "수유·낮잠 기록과 역할 분담을 적어두는 냉장고 메모보드예요.",
     amazonUrl: "https://www.amazon.com/dp/B0BLBZRN9S",
+    image: "https://m.media-amazon.com/images/I/71XMNX7uQgL._AC_SL1500_.jpg",
   },
   {
     category: "extras",
@@ -826,5 +908,6 @@ const ITEMS = [
     noteEn: "An honest book about motherhood and marriage in the baby years.",
     noteKo: "아기를 키우는 시기의 결혼과 엄마됨을 솔직하게 다룬 책이에요.",
     amazonUrl: "https://www.amazon.com/dp/0062838652",
+    image: "https://m.media-amazon.com/images/I/71cFHwgi9ML._SL1500_.jpg",
   },
 ];

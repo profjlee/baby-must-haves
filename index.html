@@ -75,6 +75,15 @@
     font-family: var(--serif); font-style: italic;
     font-size: 16.5px; line-height: 1.55; max-width: 56ch;
   }
+  .registry-cta {
+    display: inline-block; margin-top: 24px; text-decoration: none;
+    background: var(--accent); color: var(--paper);
+    font-weight: 600; font-size: 15px; letter-spacing: 0.01em;
+    padding: 12px 22px; border-radius: 4px;
+    transition: transform 120ms ease, opacity 120ms ease;
+  }
+  .registry-cta:hover { opacity: 0.9; }
+  .registry-cta:active { transform: scale(0.98); }
 
   /* ---------- Contents: dotted-leader index, print style ---------- */
   .toc { margin-top: 52px; }
@@ -106,14 +115,22 @@
 
   /* ---------- Items: numbered editorial list, not cards ---------- */
   .item {
-    display: grid; grid-template-columns: 46px 1fr; gap: 4px 14px;
+    display: grid; grid-template-columns: 40px 64px 1fr; gap: 4px 16px;
     padding: 20px 0 18px; border-bottom: 1px solid var(--hair);
   }
   .item .num {
     font-family: var(--serif); font-style: italic; font-size: 15px;
     color: var(--accent); font-variant-numeric: tabular-nums; padding-top: 2px;
   }
-  .item .name { font-weight: 600; font-size: 16.5px; line-height: 1.4; }
+  .item .thumb-wrap {
+    grid-column: 2; grid-row: 1; align-self: start;
+    width: 64px; height: 64px; border-radius: 5px; overflow: hidden;
+    background: #fff; border: 1px solid var(--hair);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .item .thumb-wrap img { width: 100%; height: 100%; object-fit: contain; padding: 4px; }
+  .item .thumb-wrap .thumb-fallback { font-size: 22px; opacity: 0.5; }
+  .item .name { grid-column: 3; font-weight: 600; font-size: 16.5px; line-height: 1.4; }
   .verdict {
     font-family: var(--serif); font-style: italic; font-size: 15px; white-space: nowrap;
   }
@@ -129,14 +146,14 @@
     border: 1px solid var(--hair); border-radius: 3px; padding: 1px 7px 2px;
     white-space: nowrap; margin-left: 6px;
   }
-  .item .note { grid-column: 2; color: var(--muted); font-size: 15px; max-width: 56ch; margin-top: 2px; text-wrap: pretty; }
+  .item .note { grid-column: 3; color: var(--muted); font-size: 15px; max-width: 56ch; margin-top: 2px; text-wrap: pretty; }
   .item .review {
-    grid-column: 2; margin-top: 10px; padding-left: 14px;
+    grid-column: 3; margin-top: 10px; padding-left: 14px;
     border-left: 2px solid var(--hair);
     font-family: var(--serif); font-style: italic;
     font-size: 15.5px; line-height: 1.6; max-width: 54ch; text-wrap: pretty;
   }
-  .item .links { grid-column: 2; margin-top: 8px; font-size: 14.5px; }
+  .item .links { grid-column: 3; margin-top: 8px; font-size: 14.5px; }
   .item .links a {
     color: var(--accent); font-weight: 500; text-decoration: underline;
     text-underline-offset: 4px; text-decoration-thickness: 1px;
@@ -152,7 +169,8 @@
   footer .fine p + p { margin-top: 6px; }
 
   @media (max-width: 480px) {
-    .item { grid-template-columns: 38px 1fr; }
+    .item { grid-template-columns: 26px 52px 1fr; gap: 4px 10px; }
+    .item .thumb-wrap { width: 52px; height: 52px; }
   }
 </style>
 </head>
@@ -172,6 +190,7 @@
     <h1 id="site-title"></h1>
     <p class="subtitle" id="site-subtitle"></p>
     <p class="charity" id="charity"></p>
+    <a class="registry-cta" id="registry-cta" href="https://www.amazon.com/baby-reg/homepage" target="_blank" rel="noopener sponsored"></a>
   </header>
 
   <!-- Contents index (built by JavaScript) -->
@@ -230,6 +249,7 @@
     maybe:     { en: "maybe?",             ko: "좋을지도?" },
     travel:    { en: "✈ travel",           ko: "✈ 여행용" },
     buyAmazon: { en: "Shop on Amazon ↗",   ko: "아마존에서 보기 ↗" },
+    registry:  { en: "Start your own Amazon Baby Registry ↗", ko: "아마존 베이비 레지스트리 만들기 ↗" },
     buyOther:  { en: "View product ↗",     ko: "제품 보러가기 ↗" },
     coming:    { en: "link coming soon",   ko: "링크 준비 중" },
     top:       { en: "back to top ↑",      ko: "맨 위로 ↑" },
@@ -244,6 +264,9 @@
     document.getElementById("site-title").textContent    = t(SITE_CONFIG, "title");
     document.getElementById("site-subtitle").textContent = t(SITE_CONFIG, "subtitle");
     document.getElementById("charity").textContent       = t(SITE_CONFIG, "charity");
+    const registryCta = document.getElementById("registry-cta");
+    registryCta.textContent = LABELS.registry[lang];
+    registryCta.href = withTag("https://www.amazon.com/baby-reg/homepage");
     document.getElementById("disclosure").textContent    = t(SITE_CONFIG, "disclosure");
     document.getElementById("footer-note").textContent   = LABELS.footer[lang];
     document.title = t(SITE_CONFIG, "title");
@@ -286,6 +309,9 @@
         el.className = "item";
 
         let html = `<div class="num">${String(n).padStart(2, "0")}</div>`;
+        html += item.image
+          ? `<div class="thumb-wrap"><img src="${item.image}" alt="${t(item, "name")}" loading="lazy" onerror="this.parentElement.innerHTML='<span class=&quot;thumb-fallback&quot;>${cat.emoji}</span>'"></div>`
+          : `<div class="thumb-wrap"><span class="thumb-fallback">${cat.emoji}</span></div>`;
         const tier = item.verdict === "absolute" ? "absolute"
                    : item.verdict === "essential" ? "essential" : "maybe";
         html += `<div class="name">${t(item, "name")}` +

@@ -29,6 +29,10 @@ Double-click `index.html` in Finder — it opens in your browser. That's it.
    - `reviewEn` / `reviewKo` — (optional) your longer honest take, shown as an italic quote
    - `amazonUrl` — your **affiliate** link (see below)
    - `verdict` — `"absolute"` shows 무조건! (absolute must!), `"essential"` shows 사라사! (must!), leaving it out shows 좋을지도? (maybe?)
+   - `travel` — `true` adds a small "✈ travel" tag, for travel-optimized gear
+   - `image` — (optional) a product photo URL. Easiest way to get one: open the
+     item's Amazon page, right-click the main product photo → **Copy Image
+     Address** → paste it here. Leave blank and a category icon shows instead.
 4. Save. Refresh the page in your browser.
 
 All ~40 items from your registry are already in the file — most just need
@@ -65,6 +69,12 @@ Two easy options — ask Claude to set either one up:
   drag the folder again.
 - **GitHub Pages** (best long-term): free, and updates publish
   automatically when the files change. Needs a small one-time setup.
+
+## The "Start your own registry" button
+
+Under the charity note, there's a button linking to Amazon's Baby Registry
+signup page. It automatically gets your Associates tag once you set
+`SITE_CONFIG.amazonTag`, same as the product links.
 
 ## Sharing tips
 
