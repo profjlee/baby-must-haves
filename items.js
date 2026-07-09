@@ -60,6 +60,7 @@ const CATEGORIES = [
   { id: "safety",    emoji: "🛡️", en: "Safety",          ko: "안전" },
   { id: "bathing",   emoji: "🛁", en: "Bath",            ko: "목욕" },
   { id: "playing",   emoji: "🧸", en: "Play",            ko: "놀이" },
+  { id: "italy",     emoji: "🇮🇹", en: "Found in Italy",  ko: "이탈리아에서 산 것들" },
   { id: "extras",    emoji: "✨", en: "Little Extras",   ko: "소소한 아이템" },
 ];
 
