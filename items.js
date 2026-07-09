@@ -88,6 +88,7 @@ const ITEMS = [
     noteEn: "A perfectly mixed, warm bottle at the push of a button — day or night.",
     noteKo: "버튼 하나면 온도와 농도가 딱 맞는 분유 한 병이 바로 나와요. 밤중 수유에 특히 진가를 발휘해요.",
     amazonUrl: "",
+    verdict: "essential",
   },
   {
     category: "feeding",
@@ -113,6 +114,7 @@ const ITEMS = [
     noteEn: "Clamps onto any table — our go-to for restaurants and travel.",
     noteKo: "어느 테이블에나 끼워 쓰는 휴대용 아기 의자. 식당·여행에 최고예요.",
     amazonUrl: "",
+    verdict: "essential",
   },
   {
     category: "feeding",
@@ -140,7 +142,6 @@ const ITEMS = [
     noteEn: "Fully breathable and machine-washable — peace of mind for sleep safety.",
     noteKo: "100% 통기성에 통째로 세탁 가능한 매트리스. 수면 안전에 안심이 돼요.",
     amazonUrl: "",
-    verdict: "essential",
   },
   {
     category: "sleeping",
@@ -166,6 +167,7 @@ const ITEMS = [
     noteEn: "Sound machine and night light, controlled from your phone; the portable one travels with us.",
     noteKo: "휴대폰으로 조절하는 백색소음기 겸 수유등. 휴대용은 외출할 때 늘 함께해요.",
     amazonUrl: "",
+    verdict: "essential",
   },
   {
     category: "sleeping",
@@ -193,7 +195,6 @@ const ITEMS = [
     noteKo: "써본 것 중 가장 부드럽고 흡수력 좋은 기저귀. 새는 일도, 밤중 교체도 줄었어요.",
     amazonUrl: "",
     otherUrl: "https://www.coterie.com",
-    verdict: "essential",
   },
   {
     category: "diapering",
@@ -228,7 +229,6 @@ const ITEMS = [
     noteEn: "Safe, straightforward install, and clicks into the stroller frame.",
     noteKo: "안전하고 설치가 쉬우며 유모차 프레임에 바로 장착돼요.",
     amazonUrl: "",
-    verdict: "essential",
   },
   {
     category: "gear",
@@ -254,6 +254,25 @@ const ITEMS = [
     nameKo: "코니 아기띠 플렉스 에어메시",
     noteEn: "A beloved Korean brand — light as a t-shirt, and babies melt into it.",
     noteKo: "티셔츠처럼 가벼운 한국 브랜드 아기띠. 아기가 폭 안겨서 스르르 잠들어요.",
+    amazonUrl: "",
+  },
+  {
+    category: "gear",
+    nameEn: "Cosco Scenera NEXT Convertible Car Seat",
+    nameKo: "코스코 시네라 넥스트 컨버터블 카시트",
+    noteEn: "Featherlight and famously affordable — perfect for travel and the second car.",
+    noteKo: "가볍고 저렴하기로 유명한 카시트. 여행용이나 세컨드 차량용으로 완벽해요.",
+    amazonUrl: "",
+    verdict: "essential",
+  },
+  {
+    category: "gear",
+    nameEn: "Cybex Ultra-Compact Portable Stroller",
+    nameKo: "사이벡스 초경량 휴대용 유모차",
+    noteEn: "Folds small enough for overhead bins — our everyday grab-and-go stroller.",
+    noteKo: "기내 선반에 들어갈 만큼 작게 접히는 유모차. 저희의 데일리 유모차예요.",
+    reviewEn: "Twin tip: with a stroller connector, one parent can push both alone.",
+    reviewKo: "쌍둥이 팁: 유모차 커넥터로 두 대를 연결하면 혼자서도 둘 다 밀 수 있어요.",
     amazonUrl: "",
     verdict: "essential",
   },
