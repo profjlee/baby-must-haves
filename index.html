@@ -10,13 +10,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Noto+Serif+KR:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  /* ---------- Palette: warm paper, dark ink, one accent ---------- */
+  /* ---------- Palette: sage paper, green-black ink, forest accent ---------- */
   :root {
-    --paper: #f6f2ea;
-    --ink: #262019;
-    --muted: #756a5c;
-    --accent: #96482b;      /* burnt sienna */
-    --hair: #ddd3c2;        /* hairline dividers */
+    --paper: #f2f3ea;
+    --ink: #212a20;
+    --muted: #6c7263;
+    --accent: #3e6b48;      /* forest green */
+    --hair: #d7dcc8;        /* hairline dividers */
     --serif: "Fraunces", "Noto Serif KR", Georgia, serif;
     --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR",
             "Apple SD Gothic Neo", sans-serif;
@@ -137,9 +137,6 @@
 
   /* ---------- Footer ---------- */
   footer { margin-top: 72px; padding-top: 24px; border-top: 2px solid var(--ink); }
-  footer .sign {
-    font-family: var(--serif); font-style: italic; font-size: 17px; margin-bottom: 16px;
-  }
   footer .fine { font-size: 13px; color: var(--muted); }
   footer .fine p + p { margin-top: 6px; }
 
@@ -173,7 +170,6 @@
   <main id="content"></main>
 
   <footer>
-    <p class="sign" id="signature"></p>
     <div class="fine">
       <p id="disclosure"></p>
       <p id="footer-note"></p>
@@ -224,8 +220,6 @@
     coming:    { en: "link coming soon",   ko: "링크 준비 중" },
     top:       { en: "back to top ↑",      ko: "맨 위로 ↑" },
     items:     { en: "items",              ko: "개" },
-    signature: { en: "— J, E & the twins · Waban, Massachusetts",
-                 ko: "— J, E 그리고 쌍둥이 · 매사추세츠 웨이번에서" },
     footer:    { en: "Updated as the twins grow — check back.",
                  ko: "쌍둥이가 자라는 만큼 리스트도 자랍니다 — 종종 들러주세요." },
   };
@@ -236,7 +230,6 @@
     document.getElementById("site-title").textContent    = t(SITE_CONFIG, "title");
     document.getElementById("site-subtitle").textContent = t(SITE_CONFIG, "subtitle");
     document.getElementById("charity").textContent       = t(SITE_CONFIG, "charity");
-    document.getElementById("signature").textContent     = LABELS.signature[lang];
     document.getElementById("disclosure").textContent    = t(SITE_CONFIG, "disclosure");
     document.getElementById("footer-note").textContent   = LABELS.footer[lang];
     document.title = t(SITE_CONFIG, "title");

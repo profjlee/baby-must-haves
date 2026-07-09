@@ -42,8 +42,8 @@ const SITE_CONFIG = {
   charityEn: "When you buy through these links, Amazon pays us a small commission — your price stays the same. Every cent of it goes to March of Dimes, which supports NICU families and research for healthy moms and babies.",
   charityKo: "이 링크로 구매하시면 아마존이 저희에게 소정의 커미션을 지급합니다. 구매 가격은 그대로예요. 그리고 그 수익금 전액은 신생아 집중치료실(NICU) 가족과 건강한 출산을 위한 연구를 지원하는 March of Dimes에 기부됩니다.",
 
-  disclosureEn: "As an Amazon Associate I earn from qualifying purchases.",
-  disclosureKo: "본 페이지는 아마존 어소시에이트 활동의 일환으로, 적격 구매 시 아마존으로부터 커미션을 받습니다.",
+  disclosureEn: "As an Amazon Associate I earn from qualifying purchases. All commissions will be donated to March of Dimes.",
+  disclosureKo: "본 페이지는 아마존 어소시에이트 활동의 일환으로, 적격 구매 시 아마존으로부터 커미션을 받습니다. 모든 커미션은 March of Dimes에 전액 기부됩니다.",
 };
 
 // ---------- CATEGORIES ----------
