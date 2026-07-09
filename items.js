@@ -742,6 +742,7 @@ const ITEMS = [
     amazonUrl: "https://www.amazon.com/dp/B0DTWXK9J9",
     image: "https://m.media-amazon.com/images/I/61U3DpK2haL._SL1500_.jpg",
     verdict: "essential",
+    valuePick: true,
   },
   {
     category: "bathing",
@@ -752,6 +753,15 @@ const ITEMS = [
     amazonUrl: "https://www.amazon.com/dp/B01NA7ZMIA",
     image: "https://m.media-amazon.com/images/I/71Vfx36c+hL._SL1500_.jpg",
     verdict: "essential",
+  },
+  {
+    category: "bathing",
+    nameEn: "Mustela Liniment No-Rinse Cleanser",
+    nameKo: "무스텔라 리니먼트 노린스 클렌저",
+    noteEn: "Also Mustela (France) — a no-rinse, olive-oil-based cleanser for diaper changes. One less step, same French pedigree.",
+    noteKo: "역시 무스텔라(프랑스) 제품이에요. 헹굴 필요 없는 올리브오일 베이스 기저귀 클렌저 — 단계 하나가 줄어드는데 품질은 그대로예요.",
+    amazonUrl: "https://www.amazon.com/dp/B00WX699SI",
+    image: "https://m.media-amazon.com/images/I/61rUTBoQCBL._SL1500_.jpg",
   },
   {
     category: "bathing",
