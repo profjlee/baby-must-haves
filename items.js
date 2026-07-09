@@ -16,7 +16,7 @@
         reviewKo  : (optional) same review in Korean
         amazonUrl : your Amazon AFFILIATE link (from SiteStripe — see README)
         otherUrl  : (optional) link for items not sold on Amazon
-        verdict   : "essential" shows the 사라사! (essentials!) label;
+        verdict   : "essential" shows the 사라사! (must!) label;
                     anything else (or leaving it out) shows 좋을지도? (maybe?)
    4. Save the file. Done — the page updates automatically.
 
@@ -83,6 +83,14 @@ const ITEMS = [
   },
   {
     category: "feeding",
+    nameEn: "Baby Brezza Formula Pro Advanced (Formula Dispenser)",
+    nameKo: "베이비 브레자 포뮬러 프로 어드밴스드 (자동 분유 제조기)",
+    noteEn: "A perfectly mixed, warm bottle at the push of a button — day or night.",
+    noteKo: "버튼 하나면 온도와 농도가 딱 맞는 분유 한 병이 바로 나와요. 밤중 수유에 특히 진가를 발휘해요.",
+    amazonUrl: "",
+  },
+  {
+    category: "feeding",
     nameEn: "Baby Brezza Superfast Portable Bottle Warmer",
     nameKo: "베이비 브레자 휴대용 보틀 워머",
     noteEn: "Warms a bottle anywhere, no outlet needed — car, stroller, middle of the night.",
@@ -100,14 +108,6 @@ const ITEMS = [
   },
   {
     category: "feeding",
-    nameEn: "Willow Go Wearable Breast Pump (Double)",
-    nameKo: "윌로우 고 착용형 무선 유축기 (더블)",
-    noteEn: "Hands-free, cord-free pumping — you can pump while caring for two babies.",
-    noteKo: "손도 줄도 필요 없는 착용형 유축기. 아기를 돌보면서 유축할 수 있어요.",
-    amazonUrl: "",
-  },
-  {
-    category: "feeding",
     nameEn: "Inglesina Fast Table Chair",
     nameKo: "잉글레시나 패스트 테이블 체어",
     noteEn: "Clamps onto any table — our go-to for restaurants and travel.",
@@ -120,14 +120,6 @@ const ITEMS = [
     nameKo: "베이비뵨 턱받이 (2개 세트)",
     noteEn: "Deep pocket catches everything; rinses clean in seconds.",
     noteKo: "깊은 포켓이 흘린 음식을 다 받아줘요. 물로 헹구면 바로 깨끗해져요.",
-    amazonUrl: "",
-  },
-  {
-    category: "feeding",
-    nameEn: "Burt's Bees Baby Organic Burp Cloths (5 Pack)",
-    nameKo: "버츠비 베이비 오가닉 트림수건 (5장)",
-    noteEn: "Soft, absorbent, and they survive endless washing.",
-    noteKo: "부드럽고 흡수력 좋고, 수없이 세탁해도 멀쩡해요.",
     amazonUrl: "",
   },
 
@@ -227,14 +219,6 @@ const ITEMS = [
     noteKo: "커버 세탁이 필요 없이 물티슈로 쓱 닦으면 끝나는 교환 패드예요.",
     amazonUrl: "",
   },
-  {
-    category: "diapering",
-    nameEn: "Dagne Dover Indi Diaper Bag Backpack (Large)",
-    nameKo: "다그네 도버 인디 기저귀 가방 백팩 (라지)",
-    noteEn: "Fits gear for two babies and still looks like a nice bag.",
-    noteKo: "쌍둥이 짐이 다 들어가는데도 예쁜 가방처럼 보여요.",
-    amazonUrl: "",
-  },
 
   // ================= GEAR & ON-THE-GO · 외출/이동 =================
   {
@@ -253,7 +237,6 @@ const ITEMS = [
     noteEn: "Electric-assist stroller that makes pushing two babies up hills feel effortless.",
     noteKo: "전동 어시스트 덕분에 쌍둥이를 태우고 언덕을 올라도 힘들지 않아요.",
     amazonUrl: "",
-    verdict: "essential",
   },
   {
     category: "gear",
@@ -261,6 +244,8 @@ const ITEMS = [
     nameKo: "베이비트렌드 스냅앤고 더블 유모차 프레임",
     noteEn: "Two infant car seats click right in — the lightweight twin hack for the first months.",
     noteKo: "신생아 카시트 두 개를 그대로 끼우는 초경량 프레임. 쌍둥이 초기 몇 달의 꿀템이에요.",
+    reviewEn: "Honestly, we ended up using this very rarely.",
+    reviewKo: "솔직히 말하면 저희는 거의 쓸 일이 없었어요.",
     amazonUrl: "",
   },
   {
@@ -271,14 +256,6 @@ const ITEMS = [
     noteKo: "티셔츠처럼 가벼운 한국 브랜드 아기띠. 아기가 폭 안겨서 스르르 잠들어요.",
     amazonUrl: "",
     verdict: "essential",
-  },
-  {
-    category: "gear",
-    nameEn: "Solly Baby Wrap Carrier",
-    nameKo: "솔리 베이비 랩 캐리어",
-    noteEn: "Buttery-soft newborn wrap for skin-to-skin naps.",
-    noteKo: "신생아 캥거루 케어에 좋은 아주 부드러운 랩 아기띠예요.",
-    amazonUrl: "",
   },
   {
     category: "gear",
@@ -295,6 +272,7 @@ const ITEMS = [
     noteEn: "No batteries — baby's own movement makes it bounce. Folds flat for travel.",
     noteKo: "배터리 없이 아기 움직임으로 통통 흔들리는 바운서. 납작하게 접혀 휴대도 편해요.",
     amazonUrl: "",
+    verdict: "essential",
   },
 
   // ================= HEALTH & SAFETY · 건강/안전 =================
@@ -305,15 +283,15 @@ const ITEMS = [
     noteEn: "Medicine goes through a pacifier — no spitting, no tears.",
     noteKo: "쪽쪽이로 약을 먹여요. 뱉지도 않고 울지도 않아요.",
     amazonUrl: "",
+    verdict: "essential",
   },
   {
     category: "health",
-    nameEn: "Momcozy Electric Nasal Aspirator",
-    nameKo: "맘코지 전동 콧물흡입기",
-    noteEn: "Gentle, effective, and babies tolerate it surprisingly well.",
-    noteKo: "부드럽고 효과 좋은 콧물흡입기. 아기들이 의외로 잘 참아줘요.",
+    nameEn: "Frida Baby NoseFrida SnotSucker (Manual Nasal Aspirator)",
+    nameKo: "프리다 베이비 노즈프리다 콧물흡입기 (수동)",
+    noteEn: "Simple manual suction — oddly effective and easy to clean.",
+    noteKo: "단순한 수동 흡입 방식인데 의외로 효과가 좋고 세척도 간편해요.",
     amazonUrl: "",
-    verdict: "essential",
   },
   {
     category: "health",
@@ -339,25 +317,8 @@ const ITEMS = [
     noteKo: "아기가 자는 동안 안전하게 손톱을 갈아줘요. 손톱깎이 공포 끝!",
     amazonUrl: "",
   },
-  {
-    category: "health",
-    nameEn: "Canopy Bedside Humidifier 2.0",
-    nameKo: "캐노피 가습기 2.0",
-    noteEn: "Mold-resistant, dishwasher-safe humidifier for dry nursery air.",
-    noteKo: "곰팡이 걱정 없고 식기세척기 세척이 가능한 아기방 가습기예요.",
-    amazonUrl: "",
-    otherUrl: "https://getcanopy.co",
-  },
 
   // ================= BATH · 목욕 =================
-  {
-    category: "bathing",
-    nameEn: "Lalo Bath Tub",
-    nameKo: "라로 아기 욕조",
-    noteEn: "Clean design, supportive newborn position, drains and dries fast.",
-    noteKo: "디자인이 깔끔하고 신생아 자세를 잘 받쳐줘요. 물 빠짐과 건조도 빨라요.",
-    amazonUrl: "",
-  },
   {
     category: "bathing",
     nameEn: "Angelcare Baby Bath Support",
@@ -365,14 +326,7 @@ const ITEMS = [
     noteEn: "Keeps a slippery newborn secure so you have both hands free.",
     noteKo: "미끄러운 신생아를 안전하게 받쳐줘서 두 손이 자유로워요.",
     amazonUrl: "",
-  },
-  {
-    category: "bathing",
-    nameEn: "KeaBabies Bamboo Washcloths (6 Pack)",
-    nameKo: "키아베이비스 대나무 아기 워시클로스 (6장)",
-    noteEn: "Impossibly soft on newborn skin.",
-    noteKo: "신생아 피부에 닿아도 될 만큼 정말 부드러워요.",
-    amazonUrl: "",
+    verdict: "essential",
   },
   {
     category: "bathing",
@@ -381,6 +335,7 @@ const ITEMS = [
     noteEn: "Gentle French skincare — cleanser, lotion, and diaper cream in one set.",
     noteKo: "순한 프랑스 스킨케어 세트. 클렌저, 로션, 발진 크림이 한 번에 들어있어요.",
     amazonUrl: "",
+    verdict: "essential",
   },
 
   // ================= PLAY · 놀이 =================
@@ -403,11 +358,12 @@ const ITEMS = [
   },
   {
     category: "playing",
-    nameEn: "Tiny Land Kids Play Tent",
-    nameKo: "타이니랜드 키즈 플레이 텐트",
-    noteEn: "A cozy little hideout that makes the nursery magical.",
-    noteKo: "아기방을 동화처럼 만들어주는 아늑한 아지트예요.",
+    nameEn: "IKEA Cirkustält Kids Play Tent",
+    nameKo: "이케아 시르쿠스텔트 키즈 플레이 텐트",
+    noteEn: "A cozy little circus hideout — classic IKEA value.",
+    noteKo: "서커스 모양의 아늑한 아지트. 가성비는 역시 이케아예요.",
     amazonUrl: "",
+    otherUrl: "https://www.ikea.com/us/en/p/cirkustaelt-childrens-tent-red-blue-white-60581369/",
   },
   {
     category: "playing",

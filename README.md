@@ -28,7 +28,7 @@ Double-click `index.html` in Finder — it opens in your browser. That's it.
    - `noteEn` / `noteKo` — your one-line "why I love it"
    - `reviewEn` / `reviewKo` — (optional) your longer honest take, shown as an italic quote
    - `amazonUrl` — your **affiliate** link (see below)
-   - `verdict: "essential"` — shows the 사라사! (essentials!) label; leave it out for 좋을지도? (maybe?)
+   - `verdict: "essential"` — shows the 사라사! (must!) label; leave it out for 좋을지도? (maybe?)
 4. Save. Refresh the page in your browser.
 
 All ~40 items from your registry are already in the file — most just need
