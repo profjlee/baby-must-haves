@@ -117,6 +117,10 @@
   .verdict {
     font-family: var(--serif); font-style: italic; font-size: 15px; white-space: nowrap;
   }
+  .verdict.absolute {
+    background: var(--accent); color: var(--paper); font-weight: 600;
+    font-size: 13.5px; padding: 1px 9px 2px; border-radius: 3px;
+  }
   .verdict.essential { color: var(--accent); font-weight: 600; }
   .verdict.maybe { color: var(--muted); font-weight: 400; }
   .item .note { grid-column: 2; color: var(--muted); font-size: 15px; max-width: 56ch; margin-top: 2px; text-wrap: pretty; }
@@ -215,6 +219,7 @@
   // UI labels that aren't in items.js
   const LABELS = {
     contents:  { en: "Contents",           ko: "목차" },
+    absolute:  { en: "absolute must!",     ko: "무조건!" },
     essential: { en: "must!",              ko: "사라사!" },
     maybe:     { en: "maybe?",             ko: "좋을지도?" },
     buyAmazon: { en: "Shop on Amazon ↗",   ko: "아마존에서 보기 ↗" },
@@ -274,9 +279,10 @@
         el.className = "item";
 
         let html = `<div class="num">${String(n).padStart(2, "0")}</div>`;
-        const isEssential = item.verdict === "essential";
+        const tier = item.verdict === "absolute" ? "absolute"
+                   : item.verdict === "essential" ? "essential" : "maybe";
         html += `<div class="name">${t(item, "name")}` +
-                ` <span class="verdict ${isEssential ? "essential" : "maybe"}">${LABELS[isEssential ? "essential" : "maybe"][lang]}</span>` +
+                ` <span class="verdict ${tier}">${LABELS[tier][lang]}</span>` +
                 `</div>`;
         const note = t(item, "note");
         if (note) html += `<p class="note">${note}</p>`;

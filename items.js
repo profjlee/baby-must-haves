@@ -16,7 +16,8 @@
         reviewKo  : (optional) same review in Korean
         amazonUrl : your Amazon AFFILIATE link (from SiteStripe — see README)
         otherUrl  : (optional) link for items not sold on Amazon
-        verdict   : "essential" shows the 사라사! (must!) label;
+        verdict   : "absolute"  shows the 무조건! (absolute must!) label
+                    "essential" shows the 사라사! (must!) label
                     anything else (or leaving it out) shows 좋을지도? (maybe?)
    4. Save the file. Done — the page updates automatically.
 
@@ -267,8 +268,8 @@ const ITEMS = [
   },
   {
     category: "gear",
-    nameEn: "Cybex Ultra-Compact Portable Stroller",
-    nameKo: "사이벡스 초경량 휴대용 유모차",
+    nameEn: "Cybex Libelle Ultra-Compact Stroller",
+    nameKo: "사이벡스 리벨 초경량 휴대용 유모차",
     noteEn: "Folds small enough for overhead bins — our everyday grab-and-go stroller.",
     noteKo: "기내 선반에 들어갈 만큼 작게 접히는 유모차. 저희의 데일리 유모차예요.",
     reviewEn: "Twin tip: with a stroller connector, one parent can push both alone.",
