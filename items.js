@@ -1075,4 +1075,48 @@ const ITEMS = [
     noteKo: "배터리로 작동하고 화학 성분이 없어요 — 유모차 근처에 직접 스프레이 뿌리는 걸 꺼리는 부모를 위한 클립형 제품이에요. 초음파 퇴치기의 실제 효과는 곤충학 연구에서도 의견이 갈리는 부분이라, 검증된 효능만큼이나 '뭔가 하고 있다'는 안심을 사는 셈이에요.",
     otherUrl: "https://www.amazon.it/dp/B00T69BPVY",
   },
+
+  // ---- Added 2026-07-13 ----
+  {
+    category: "feeding",
+    nameEn: "Doddl Toddler Spoon & Fork Set",
+    nameKo: "도들 유아 스푼 포크 세트",
+    noteEn: "The double-sided handle stays balanced no matter how a toddler grips it, so food actually makes it to the mouth instead of the bib — ergonomics are the entire pitch, not the color options. A UK brand solving self-feeding through geometry rather than gimmicks.",
+    noteKo: "양쪽에 손잡이가 있는 디자인 덕분에 아이가 어떻게 쥐어도 균형이 잡혀서, 음식이 턱받이가 아니라 입으로 들어가요 — 색상 옵션보다 인체공학이 이 제품의 전부예요. 영국 브랜드가 잔재주가 아니라 기하학으로 자기주도 식사 문제를 푼 사례예요.",
+    amazonUrl: "https://www.amazon.com/dp/B0779CZ9FD",
+    image: "https://m.media-amazon.com/images/I/61QPedkOCML._AC_SL1500_.jpg",
+  },
+  {
+    category: "playing",
+    nameEn: "Fisher-Price Jumperoo",
+    nameKo: "피셔프라이스 점퍼루",
+    noteEn: "A rotating seat and a ring of noisy, lightable toys turn bouncing into a genuinely absorbing activity, buying a solid twenty minutes of hands-free time. The height-adjustable frame lasts through an actual growth spurt, not just one size window — rare restraint in a toy category built on obsolescence.",
+    noteKo: "회전하는 시트와 소리 나고 불이 켜지는 장난감 링이 통통 튀는 걸 진짜 몰입되는 놀이로 만들어줘서, 손이 자유로운 20분을 확실히 벌어줘요. 높이 조절 프레임이라 한 사이즈만 맞으면 끝나는 게 아니라 성장기 내내 쓸 수 있어요 — 금방 못 쓰게 만드는 장난감 카테고리치고는 드문 절제예요.",
+    amazonUrl: "https://www.amazon.com/dp/B0D2CK1DV1",
+    image: "https://m.media-amazon.com/images/I/51oBhthSGrL._SL1001_.jpg",
+  },
+  {
+    category: "playing",
+    nameEn: "Moover Wooden Ride-On Bike",
+    nameKo: "무버 원목 라이드온 바이크",
+    noteEn: "Solid wood and silent wheels mean no plastic rattle rolling across hardwood floors at 6am — a Danish design brand charging a real premium for materials most competitors skip entirely. Not sold on Amazon; ordered directly from the brand, closer to buying furniture than a toy.",
+    noteKo: "원목과 소음 없는 바퀴 덕분에 새벽 6시에 플라스틱 덜컹거리는 소리 없이 마룻바닥을 굴러다녀요 — 대부분의 경쟁 제품이 아예 생략하는 소재에 제대로 프리미엄을 매기는 덴마크 디자인 브랜드예요. 아마존엔 없고 브랜드 직구인데, 장난감이라기보다 가구를 사는 느낌에 가까워요.",
+    otherUrl: "https://www.moovershop.com/products/ride-on-bike-4-wheels-red",
+  },
+  {
+    category: "playing",
+    nameEn: "IKEA DVÄRGMÅS Children's Tent",
+    nameKo: "이케아 드베리모스 어린이 텐트",
+    noteEn: "Connects directly to the matching tunnel to form one long crawl-through play set, rather than being a standalone hideout — the modularity is the actual design idea, not the tent shape itself. Same IKEA formula as always: good enough, cheap enough, no design brief required.",
+    noteKo: "짝을 이루는 터널과 직접 연결돼서 하나의 긴 놀이 코스가 되는, 독립된 아지트가 아니라 모듈형 구조가 핵심 아이디어예요. 늘 그렇듯 이케아 공식이에요 — 적당히 좋고, 충분히 저렴하고, 디자인 기획서가 필요 없어요.",
+    otherUrl: "https://www.ikea.com/us/en/p/dvaergmas-childrens-tent-green-70547600/",
+  },
+  {
+    category: "playing",
+    nameEn: "IKEA DVÄRGMÅS Play Tunnel",
+    nameKo: "이케아 드베리모스 플레이 터널",
+    noteEn: "Presses flat for storage and clips onto the matching tent to extend the crawl path — the entire product is a fabric hoop, priced and built exactly like one. Multiple tunnels connect end to end if a toddler's ambitions outgrow the living room.",
+    noteKo: "보관할 땐 납작하게 눌러지고, 짝꿍 텐트에 연결하면 기어다니는 코스가 길어져요 — 사실 원단 후프 하나가 제품의 전부고, 가격도 딱 그만큼이에요. 아이의 야망이 거실을 넘어서면 터널 여러 개를 이어 붙일 수도 있어요.",
+    otherUrl: "https://www.ikea.com/us/en/p/dvaergmas-play-tunnel-blue-green-90547595/",
+  },
 ];
